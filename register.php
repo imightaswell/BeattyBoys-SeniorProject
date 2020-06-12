@@ -16,9 +16,6 @@
 		<label for="password">Password:</label><br />
 		<input name="password" type="password" /><br />
 
-		<!--<label for="password">Confirm Password:</label><br>
-		<input type="password" name="password2"><br>--> 
-
 		<label for="age">Age:</label><br />
 		<input name="age" type="number" /><br />
 
