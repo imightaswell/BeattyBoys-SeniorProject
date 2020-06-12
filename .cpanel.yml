@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/beattybo/public_html/
-    - /bin/cp -R BeattyBoys-SeniorProject $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH.
