@@ -80,7 +80,7 @@ if (isset($_POST['signin'])) {
 
 			header('location: index.php');
 
-			echo json_encode($username);
+			echo json_encode($_SESSION['username']);
 		}
 
 		else {
