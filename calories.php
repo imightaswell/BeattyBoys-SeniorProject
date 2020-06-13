@@ -8,8 +8,8 @@
 </head>
 <body>
 
-	<?php if (isset($_SESSION['weight'])) : ?> 
-	<p>Signed in as,<strong><?php echo $_SESSION['username']; ?></strong></p> 
+	<?php if (isset($_SESSION['username'])) : ?> 
+	<p>Signed in as,<strong><?php echo $_SESSION['weight']; ?></strong></p> 
 	<?php endif ?> 
 
 	<table>

@@ -47,6 +47,10 @@ if(isset($_POST['signup'])){
 		mysqli_query($conn,$query);
 
 		$_SESSION['username'] = $username;
+		$_SESSION['weight'] = $weight;
+		$_SESSION['height'] = $height;
+		$_SESSION['gender'] = $gender;
+		$_SESSION['activity'] = $activity;
 
 		$_SESSION['success'] = "You have logged in";
 
