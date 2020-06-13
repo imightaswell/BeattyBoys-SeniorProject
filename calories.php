@@ -8,7 +8,7 @@
 	<script>
 		var ajax =  new XMLHttpRequest();
 		var method = "GET";
-		var url = "userdata.php";
+		var url = "server.php";
 		var asynchronous = true;
 
 		ajax.open(method, url, asynchronous);
