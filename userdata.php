@@ -14,6 +14,6 @@ $age = $_SESSION['age'];
 //$result = mysqli_query($conn, "SELECT password FROM user WHERE username='$username'");
 
 
-echo json_encode($age);
+echo json_encode($username);
 
  ?>
