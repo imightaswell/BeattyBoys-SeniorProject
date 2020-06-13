@@ -12,7 +12,7 @@ $age = $result['age'];
 $weight = $result['weight'];
 $height = $result['height'];
 $gender = $result['gender'];
-$activity = $result['activity'];
+$activity = $result['activity_level'];
 
 
  ?>
