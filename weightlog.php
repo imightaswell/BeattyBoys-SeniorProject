@@ -43,7 +43,9 @@ include('server.php');
 		data: [{        
 			type: "line",
       		indexLabelFontSize: 16,
-			data: weight
+			datasets: [{
+				data: weight
+			}]
 			}]
 		});
 		chart.render();
