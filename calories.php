@@ -19,11 +19,12 @@
 			if (this.readyState == 4 && this.status == 200){
 				//alert(this.responseText);
 				var data = JSON.parse(this.responseText);
+
+				var gender = data[3];
+				alert(gender);
 				console.log(data);
 			}
 		}
-
-
 	</script>
 
 </head>
