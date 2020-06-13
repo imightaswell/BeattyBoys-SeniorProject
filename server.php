@@ -76,17 +76,8 @@ if (isset($_POST['signin'])) {
 
 		if(mysqli_num_rows($result)==1){
 			$_SESSION['username'] = $username;
-			$_SESSION['age'] = $age;
-			$_SESSION['height'] = $height;
-			$_SESSION['weight'] = $weight;
-			$_SESSION['gender'] = $gender;
-			$_SESSION['activity'] = $activity;
 			$_SESSION['success'] = "You have logged in";
 
-			
-			
-
-			echo json_encode($_SESSION['username']);
 			header('location: index.php');
 
 
