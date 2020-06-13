@@ -27,6 +27,7 @@ include('server.php');
 
 		var weight = JSON.parse(this.responseText);	
 		alert(weight);
+		console.log(weight);
 		
 	}
 	}

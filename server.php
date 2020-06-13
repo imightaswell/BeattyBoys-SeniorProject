@@ -99,9 +99,12 @@ if (isset($_POST['weightChange'])){
 
 	$weight = $weight . "," . $_POST['weight'];
 
+	echo json_encode($weight);
+
 	$query = "UPDATE user SET weight='$weight' WHERE username='$username'";
 	mysqli_query($conn,$query);
-	echo json_encode($weight);
+
+	
 }
 
  ?>
