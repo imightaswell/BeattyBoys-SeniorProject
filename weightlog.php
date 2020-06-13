@@ -23,43 +23,39 @@ include('server.php');
 
 	ajax.onreadystatechange = function(){
 
+	var weight =  new Array();
+	weight = JSON.parse(this.responseText);	
+
+	alert(weight);
+	console.log(weight);
 	
 
-		var weight = JSON.parse(this.responseText);	
-		alert(weight);
-		console.log(weight);
+	var data = {
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(220,220,220,0.2)",
+            strokeColor: "rgba(220,220,220,1)",
+            pointColor: "rgba(220,220,220,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(220,220,220,1)",
+            data: weight
+        }
+    ]
+};
 
-		window.onload = function () {
 
-	var chart = new CanvasJS.Chart("chartContainer", {
-		animationEnabled: true,
-		theme: "light2",
-		title:{
-			text: "Simple Line Chart"
-		},
-		axisY:{
-			includeZero: false
-		},
-		data: [{        
-			type: "line",
-      		indexLabelFontSize: 16,
-			datasets: [{
-				data: weight
-			}]
-			}]
-		});
-		chart.render();
+	var cv = $("#canvas").get(0).getContext("2d");
 
-		}
-	
-	
+	var mychart = new Chart(cv).Line(data);
+
 	</script>
 </head>
 <body>
 
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
+<canvas id="canvas" height="300" width="500"></canvas>
 
 <form method="post" action="weightlog.php">
 
