@@ -41,7 +41,9 @@ if (isset($_GET['logout'])) {
 	</div>
 	<div class="main">
 			<div class="logo">
-				<img src="img/logo2.png">
+				<a href="index.php">
+				<img src="img/logo2.png"></img>
+				</a>
 			</div>
 			<ul>
 				<li><a href="#">About Us</a></li>
