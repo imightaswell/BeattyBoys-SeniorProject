@@ -9,11 +9,11 @@ $db = 'beattybo_fitness';
 $conn = mysqli_connect($server, $admin, $pw, $db);
 
 $username = $_SESSION['username'];
-$password = $_SESSION['password'];
+$age = $_SESSION['age'];
 
 //$result = mysqli_query($conn, "SELECT password FROM user WHERE username='$username'");
 
 
-echo json_encode($password);
+echo json_encode($age);
 
  ?>
