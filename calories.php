@@ -5,9 +5,23 @@
 <head>
 	<title>BeattyBoys Fitness -Calories & Macronutrients</title>
 
-	<script type="text/javascript">
-		var bool = "<?php echo $weight?>";
-		document.getElementById("weight").innerHTML=bool;
+	<script>
+		var ajax =  new XMLHttpRequest();
+		var method = "GET";
+		var url = "userdata.php";
+		var asynchronous = true;
+
+		ajax.open(method, url, asynchronous);
+
+		ajax.send();
+
+		ajax.onreadystatechange = function(){
+			if (this.readyState == 4 && this.status == 200){
+				alert(this.responseText);
+			}
+		}
+
+
 	</script>
 </head>
 <body>
