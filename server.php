@@ -49,7 +49,7 @@ if(isset($_POST['signup'])){
 		mysqli_query($conn,$query);
 
 		$_SESSION['username'] = $username;
-		
+		$_SESSION['password'] = $password;
 		$_SESSION['success'] = "You have logged in";
 
 		header('location: index.php');
