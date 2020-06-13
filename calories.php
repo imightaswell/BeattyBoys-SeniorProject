@@ -27,7 +27,7 @@
 				var activity = data[4];
 				
 				weight = weight/2.205;
-				aler(weight);
+				alert(weight);
 				console.log(data);
 			}
 		}
