@@ -4,7 +4,7 @@ include_once('server.php');
 
 $username = $_SESSION['username'];
 
-$query="SELECT age FROM user WHERE username LIKE '$username'";
+$query="SELECT age FROM user WHERE username LIKE 'root'";
 
 $result = mysqli_query($query);
 
