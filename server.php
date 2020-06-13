@@ -49,7 +49,7 @@ if(isset($_POST['signup'])){
 		mysqli_query($conn,$query);
 
 		$_SESSION['username'] = $username;
-		
+		$_SESSION['password'] = $password;
 		$_SESSION['success'] = "You have logged in";
 
 		header('location: index.php');
@@ -77,7 +77,7 @@ if (isset($_POST['signin'])) {
 		if(mysqli_num_rows($result)==1){
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You have logged in";
-		
+			$_SESSION['password'] = $password;
 			header('location: index.php');
 
 		}
@@ -101,9 +101,7 @@ if (isset($_POST['weightChange'])){
 
 	$query = "UPDATE user SET weight='$weight' WHERE username='$username'";
 	mysqli_query($conn,$query);
-
-	json_encode($weight);
-
+	echo json_encode($weight);
 }
 
  ?>
