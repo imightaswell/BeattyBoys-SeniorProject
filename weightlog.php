@@ -8,38 +8,10 @@ include('server.php');
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	<title>BeattyBoys Fitness - Weight Log</title>
-</head>
-<body>
 
-
-
-
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-
-<script type="text/javascript">
-		
-	var ajax =  new XMLHttpRequest();
-	var method = "GET";
-	var url = "server.php";
-	var asynchronous = true;
-
-	ajax.open(method, url, asynchronous);
-
-	ajax.send();
-
-	ajax.onreadystatechange = function(){
-
-	if (this.readyState == 4 && this.status == 200){
-
-		var weight = JSON.parse(this.responseText);	
-		alert(weight);
-		console.log(weight);
-	}
-	}
-
-	window.onload = function () {
+	<script>
+window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
@@ -66,12 +38,41 @@ var chart = new CanvasJS.Chart("chartContainer", {
 			{ y: 500 },
 			{ y: 480 },
 			{ y: 510 }
-		]
-	}]
-});
-chart.render();
+			]
+		}]
+	});
+	chart.render();
 
-}
+	}
+	</script>
+</head>
+<body>
+
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+<script type="text/javascript">
+		
+	var ajax =  new XMLHttpRequest();
+	var method = "GET";
+	var url = "server.php";
+	var asynchronous = true;
+
+	ajax.open(method, url, asynchronous);
+
+	ajax.send();
+
+	ajax.onreadystatechange = function(){
+
+	if (this.readyState == 4 && this.status == 200){
+
+		var weight = JSON.parse(this.responseText);	
+		alert(weight);
+		console.log(weight);
+	}
+	}
+
+
 	</script>
 
 <form method="post" action="weightlog.php">
