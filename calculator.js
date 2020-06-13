@@ -85,6 +85,7 @@ var ajax =  new XMLHttpRequest();
 			}
 
 			baseArray = macros(base, weightInPounds);
+			console.log(baseArray)k
 			cuttingArray = macros(cutting, weightInPounds);
 			bulkingArray = macros(bulking, weightInPounds);
 
