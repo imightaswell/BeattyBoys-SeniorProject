@@ -1,19 +1,12 @@
-<?php include('server.php') ?>
 <?php 
 
-$server = 'localhost';
-$admin = 'beattybo_user';
-$pw = 'Lovesosa123';
-$db = 'beattybo_fitness';
-
-$conn = mysqli_connect($server, $admin, $pw, $db);
+include_once('server.php');
 
 $username = $_SESSION['username'];
-$age = $_SESSION['age'];
 
-$result = mysqli_query($conn, "SELECT * FROM user WHERE username='$username'");
+$query="SELECT age FROM user WHERE username LIKE '$username'";
 
-$data = array();
+$result = mysqli_query($query);
 
 while ($row = mysqli_fetch_assoc($result)){
 	$data[] = $row;
