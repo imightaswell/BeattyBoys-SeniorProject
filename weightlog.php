@@ -8,7 +8,7 @@ include('server.php');
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+	<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	<title>BeattyBoys Fitness - Weight Log</title>
 </head>
 <body>
@@ -16,7 +16,7 @@ include('server.php');
 
 
 
-<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
 
 <script type="text/javascript">
 		
@@ -38,29 +38,39 @@ include('server.php');
 		console.log(weight);
 		
 
-		var ctx = document.getElementById("chart").getContext('2d');
-    		var myChart = new Chart(ctx, {
-        	type: 'line',
-		       data: {
-		           labels: [1,2,3,4,5,6,7,8,9],
-		           datasets: 
-		           [{
-		               label: 'Weight',
-		               data: [weight],
-		               backgroundColor: 'transparent',
-		               borderColor:'rgba(255,99,132)',
-		               borderWidth: 3
-		           },
+window.onload = function () {
 
-		           ]
-		       },
-		     
-		       options: {
-		           scales: {scales:{yAxes: [{beginAtZero: false}], xAxes: [{autoskip: true, maxTicketsLimit: 20}]}},
-		           tooltips:{mode: 'index'},
-		           legend:{display: true, position: 'top', labels: {fontColor: 'rgb(255,255,255)', fontSize: 16}}
-		       }
-		   });
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Simple Line Chart"
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [
+			{ y: 450 },
+			{ y: 414},
+			{ y: 520, indexLabel: "\u2191 highest",markerColor: "red", markerType: "triangle" },
+			{ y: 460 },
+			{ y: 450 },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 480 },
+			{ y: 410 , indexLabel: "\u2193 lowest",markerColor: "DarkSlateGrey", markerType: "cross" },
+			{ y: 500 },
+			{ y: 480 },
+			{ y: 510 }
+		]
+	}]
+});
+chart.render();
+
+}
 
 
 
