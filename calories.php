@@ -83,31 +83,29 @@
 			<th>Bulking Calories</th>
 		</tr>
 
-		<!-- Calories row -->
 		<tr>
 			<td><p id="baseCals"></p></td>
 			<td><p id="cuttingCals"></p></td>
 			<td><p id="bulkingCals"></p></td>
 		</tr>
 
-		<!-- Carbs row -->
+		
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><p>Protein:</p></td>
+			<td><p>Protein:</p></td>
+			<td><p>Protein:</p></td>
 		</tr>
-		<!-- Protein row -->
+		
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><p>Carbs:</p></td>
+			<td><p>Carbs:</p></td>
+			<td><p>Carbs:</p></td>
 		</tr>
 
-		<!-- Fats row -->
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><p>Fats:</p></td>
+			<td><p>Fats:</p></td>
+			<td><p>Fats:</p></td>
 		</tr>
 	
 	</table>
