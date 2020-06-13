@@ -16,7 +16,7 @@ include('server.php');
 
 
 
-
+<canvas id="chart" style="width: 100%; height: 65vh; background: #222; border: 1px solid #555652; margin-top: 10px;"></canvas>
 
 <script type="text/javascript">
 		
