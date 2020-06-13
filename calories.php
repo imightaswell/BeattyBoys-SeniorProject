@@ -79,8 +79,8 @@
 
 		<tr>
 			<th>Maintence Calories</th>
-			<th>Bulking Calories</th>
 			<th>Cutting Calories</th>
+			<th>Bulking Calories</th>
 		</tr>
 
 		<!-- Calories row -->
