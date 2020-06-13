@@ -89,4 +89,16 @@ if (isset($_POST['signin'])) {
 	}
 }
 
+if (isset($_POST['weightChange'])){
+
+	$username = $_SESSION['username'];
+
+	$result = mysqli_query($conn,"SELECT * FROM user WHERE username = '$username'");
+	$result = mysqli_fetch_assoc($result);
+	$weight = $result['weight'];
+
+	//$weight .= $_POST['weight'];
+	echo json_encode($weight);
+}
+
  ?>
