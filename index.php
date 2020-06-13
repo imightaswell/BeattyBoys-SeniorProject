@@ -81,7 +81,6 @@ if (isset($_GET['logout'])) {
 			<a href="routines.php" class="btnLOGIN">Workout Routines</a>  
 		</div>
 	<?php endif ?>
-
 </div> 
 
 </header>
