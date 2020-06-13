@@ -7,6 +7,10 @@
 
 </head>
 <body>
+
+	<?php if (isset($_SESSION['username'])) : ?> 
+	<p>Signed in as,<strong><?php echo $_SESSION['username']; ?></strong></p> 
+	<?php endif ?> 
 	<table>
 
 		<tr>
@@ -17,12 +21,7 @@
 
 		<!-- Calories row -->
 		<tr>
-			<td>
-				<script>
-				var height = <?php echo $_SESSION['height']; ?>
-				document.body.innerHTML = "<p>This is a test"+height+"</p>"	
-				</script>
-			</td>
+			<td></td>
 			<td></td>
 			<td></td>
 		</tr>
