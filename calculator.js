@@ -80,7 +80,7 @@ var ajax =  new XMLHttpRequest();
 			weight = weight/2.205;
 			height = height*2.54;
 
-			var base = calories(age, weight, height, gender, activity)
+			var base = calories(age, weight, height, gender, activity);
 			var cutting = base - (base*.2);
 			var bulking = base + (base*.15);
 
