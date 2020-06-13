@@ -76,7 +76,6 @@ if (isset($_POST['signin'])) {
 
 		if(mysqli_num_rows($result)==1){
 			$_SESSION['username'] = $username;
-			$_SESSION['activity'] = $_POST['activity'];
 			$_SESSION['success'] = "You have logged in";
 
 			header('location: index.php');
