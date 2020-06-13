@@ -18,6 +18,7 @@ function macros(c, w){
 				array.push(carbs);
 
 				return array;
+				
 			}
 var ajax =  new XMLHttpRequest();
 	var method = "GET";
