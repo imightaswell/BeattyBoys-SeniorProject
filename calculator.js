@@ -30,7 +30,6 @@ var ajax =  new XMLHttpRequest();
 
 	ajax.onreadystatechange = function(){
 		if (this.readyState == 4 && this.status == 200){
-			//alert(this.responseText);
 			var data = JSON.parse(this.responseText);
 			
 
@@ -48,7 +47,6 @@ var ajax =  new XMLHttpRequest();
 			var gender = data[3];
 			var activity = data[4];
 			
-			weightInPounds = weight;
 			weight = weight/2.205;
 			height = height*2.54;
 
@@ -82,10 +80,9 @@ var ajax =  new XMLHttpRequest();
 			cutting = base - (base*.2);
 			bulking = base + (base*.15);
 
-			baseArray = macros(base, weightInPounds);
-			alert(baseArray);
-			cuttingArray = macros(cutting, weightInPounds);
-			bulkingArray = macros(bulking, weightInPounds);
+			baseArray = macros(base, weight*2.205);
+			cuttingArray = macros(cutting, weight*2.205);
+			bulkingArray = macros(bulking, weight*2.205);
 
 			document.getElementById('baseCals').innerHTML = base.toFixed(0);
 			document.getElementById('cuttingCals').innerHTML = cutting.toFixed(0);
@@ -104,5 +101,6 @@ var ajax =  new XMLHttpRequest();
 			document.getElementById('bulkingCarbs').innerHTML = bulkingArray[2];
 		}
 	}
+
 		
 		
