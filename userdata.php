@@ -7,13 +7,11 @@ $db = 'beattybo_fitness';
 
 $conn = mysqli_connect($server, $admin, $pw, $db);
 
-$result = mysqli_query($conn, "SELECT * FROM user");
+$result = mysqli_query($conn, "SELECT password FROM user WHERE username='$_SESSION['username']'");
 
 $data = array();
 
-while ($row = mysqli_fetch_assoc($result)){
-	$data[] = $row;
-}
+array_push($data, $result);
 
 echo json_encode($data);
 
