@@ -20,6 +20,44 @@ function macros(c, w){
 				return array;
 				
 			}
+
+function calories(age, weight, height, gender, activity){
+	
+	var base;
+
+	weight = weight/2.205;
+	height = height*2.54;
+
+	var multiplier;
+
+
+	if (activity == "Sedentary"){
+		multiplier = 1.2;
+	}
+
+	else if (activity == "Moderate"){
+		multiplier = 1.4;
+	}
+
+	else if (activity == "Intense"){
+		multiplier = 1.7;
+	}
+
+	else {
+		multiplier = 1.95;
+	}
+
+	if (gender=="Male"){
+		base=((10*weight+6.25*height-5*age) + 5) * multiplier;
+	}
+
+	else {
+		base=((10*weight+6.25*height-5*age) - 161) * multiplier;
+	}
+
+	return base;
+}
+
 var ajax =  new XMLHttpRequest();
 	var method = "GET";
 	var url = "userdata.php";
@@ -33,15 +71,6 @@ var ajax =  new XMLHttpRequest();
 		if (this.readyState == 4 && this.status == 200){
 			var data = JSON.parse(this.responseText);
 			
-
-			var base;
-			var cutting;
-			var bulking;
-
-			var maintainArray;
-			var cuttingArray;
-			var bulkingArray;
-
 			var age = data[0];
 			var weight = data[1];
 			var height = data[2];
@@ -51,35 +80,13 @@ var ajax =  new XMLHttpRequest();
 			weight = weight/2.205;
 			height = height*2.54;
 
-			var multiplier;
+			var base = calories(age, weight, height, gender, activity)
+			var cutting = base - (base*.2);
+			var bulking = base + (base*.15);
 
-
-			if (activity == "Sedentary"){
-				multiplier = 1.2;
-			}
-
-			else if (activity == "Moderate"){
-				multiplier = 1.4;
-			}
-
-			else if (activity == "Intense"){
-				multiplier = 1.7;
-			}
-
-			else {
-				multiplier = 1.95;
-			}
-
-			if (gender=="Male"){
-				base=((10*weight+6.25*height-5*age) + 5) * multiplier;
-			}
-
-			else {
-				base=((10*weight+6.25*height-5*age) - 161) * multiplier;
-			}
-
-			cutting = base - (base*.2);
-			bulking = base + (base*.15);
+			var maintainArray;
+			var cuttingArray;
+			var bulkingArray;
 
 			baseArray = macros(base, weight*2.205);
 			cuttingArray = macros(cutting, weight*2.205);
