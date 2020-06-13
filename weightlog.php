@@ -36,9 +36,10 @@ include('server.php');
 		var weight = JSON.parse(this.responseText);	
 		alert(weight);
 		console.log(weight);
-		
+	}
+	}
 
-window.onload = function () {
+	window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
@@ -71,11 +72,6 @@ var chart = new CanvasJS.Chart("chartContainer", {
 chart.render();
 
 }
-
-
-
-	}
-	}
 	</script>
 
 <form method="post" action="weightlog.php">
