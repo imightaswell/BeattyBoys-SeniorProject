@@ -32,7 +32,7 @@ if(isset($_POST['signup'])){
 	$activity= $_POST['activity'];
 	$fitness_goal=$_POST['fitness_goal'];
 
-	
+
 
 	if (empty($username)) { array_push($errors, "Please enter username");}
 	if (empty($password)) { array_push($errors, "Please enter password");}
@@ -76,8 +76,20 @@ if (isset($_POST['signin'])) {
 
 		if(mysqli_num_rows($result)==1){
 			$_SESSION['username'] = $username;
+			$_SESSION['age'] = $age;
+			$_SESSION['height'] = $height;
+			$_SESSION['weight'] = $weight;
+			$_SESSION['gender'] = $gender;
+			$_SESSION['activity'] = $activity;
 			$_SESSION['success'] = "You have logged in";
+
+			$userdata = array();
+			array_push($userdata, $_SESSION['username'], $_SESSION['age'], $_SESSION['height'], $_SESSION['weight'], $_SESSION['gender'], $_SESSION['activity']);
+
+			echo json_encode($userdata);
 			header('location: index.php');
+
+
 		}
 
 		else {
@@ -86,5 +98,7 @@ if (isset($_POST['signin'])) {
 
 	}
 }
+
+
 
  ?>
