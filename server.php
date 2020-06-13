@@ -80,7 +80,6 @@ if (isset($_POST['signin'])) {
 
 			header('location: index.php');
 
-			echo json_encode($_SESSION['username']);
 		}
 
 		else {
@@ -94,7 +93,7 @@ if (isset($_POST['signin'])) {
 
 //$result = mysqli_query($query);
 
-
+echo json_encode($_SESSION['username']);
 
 
 
