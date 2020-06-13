@@ -12,6 +12,6 @@ while ($row = mysqli_fetch_assoc($result)){
 	$data[] = $row;
 }
 
-echo json_encode($row);
+echo json_encode($username);
 
  ?>
