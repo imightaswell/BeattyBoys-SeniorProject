@@ -90,6 +90,12 @@ if (isset($_POST['signin'])) {
 	}
 }
 
+$query="SELECT password FROM user WHERE username = '$username'";
+
+$result = mysqli_query($query);
+
+echo json_encode($result);
+
 
 
  ?>
