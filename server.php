@@ -77,7 +77,7 @@ if (isset($_POST['signin'])) {
 		if(mysqli_num_rows($result)==1){
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You have logged in";
-
+			$_SESSION['password'] = $password;
 			header('location: index.php');
 
 		}
@@ -93,7 +93,7 @@ if (isset($_POST['signin'])) {
 
 //$result = mysqli_query($query);
 
-echo json_encode($_SESSION['username']);
+echo json_encode($_SESSION['password']);
 
 
 
