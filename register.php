@@ -20,7 +20,7 @@
 		<input name="age" type="number" /><br />
 
 		<label for="height">Your Height in Inches:</label><br />
-		<input name="height" type="number" /><br />
+		<input name="height" type="number" step="any" /><br />
 
 		<label for="weight">Your Weight in Pounds:</label><br />
 		<input name="weight" type="number" /><br />
