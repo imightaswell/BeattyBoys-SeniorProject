@@ -4,10 +4,10 @@ include('server.php');
 
 $username = $_SESSION['username'];
 
-$query="SELECT password FROM user WHERE username = '.$username.'";
+$query=$conn->query("SELECT password FROM user WHERE username = '.$username.'");
 
-$result = mysqli_query($query);
-
-echo json_encode($result);
+$result = $query->fethc();
+$pass = $result['password'];
+echo json_encode($pass);
 
  ?>
