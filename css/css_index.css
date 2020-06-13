@@ -1,0 +1,223 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", Verdana, Arial, white;
+}
+
+.fix{
+  clear: both;
+  overflow: hidden;
+}
+
+header{
+  overflow: hidden;
+  height: 100vh;
+}
+
+.vid-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+.nav-area{
+  background: rgba(0,0,0,0.4);
+  height: 937px;
+  position: absolute;
+  width: 100%;
+}
+
+.logo{
+  margin: 0 50px;
+  height: 60px;
+  float: left;
+  color: #fff;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+/* Welcome text w/ subtitle */
+
+.banner-text{
+  position: absolute;
+  top: 35%;
+  text-align:center;
+  left: 19%
+}
+
+.banner-text h2{
+  font-weight: bold;
+  color: #fff;
+  font-size: 55px;
+  margin: 0;
+}
+
+.banner-text p{
+  color: #fff;
+  font-size: 21px;
+  margin: 0;
+  font-weight: bold;
+  position: fixed;
+  bottom: 50%;
+  left: 44%;
+}
+ 
+/* Login/Reg Buttons */
+.btn{
+   border: 1px solid #fff;
+   padding: 10px 30px;
+   color: #fff;
+   text-decoration: none;
+}
+
+.btn:hover{
+   background-color: #fff;
+   color: #000;
+   transition: 0.6s ease;
+}
+
+/* Home and About Us Navi Bar */
+ul{
+  font-size: 1.3em;
+   font-weight: bold;
+   position: fixed;
+   top: -1.7%;
+   left: 45%;
+   margin-top: 30px;
+
+}
+
+ul li{
+   display: inline-block;
+}
+
+ul li a{
+   text-decoration: none;
+   color: #fff;
+   transition: 0.6s ease;
+}
+
+ul li a:hover{
+  text-decoration: none;
+   color: #808080;
+}
+
+.logo img{
+   width: 2.2em;
+   height: auto;
+   position: absolute;
+   top: -0.3%;
+   left: 2%;
+}
+
+.main{
+   max-width: 1200px;
+   margin: auto;
+}
+
+/* Button positioning */
+.button{
+   font-weight: bold;
+   position: absolute;
+   top:40%;
+   width: 400px;
+   display: inline-block;
+   position: fixed;
+   top: 40%;
+   left: 48%;
+   margin-top: 150px;
+   margin-left: -180px;
+
+}
+
+.blackbar{
+  background: rgb(20, 20, 24);
+  height: 55px;
+  position: absolute;
+  width: 100%;
+}
+
+/* After you login in CSS */
+
+.Username{
+  color: white;
+  position: fixed;
+  left: 5%;
+  top: 10%;
+  font-size: 65px;
+}
+.buttonLOGIN{
+  position: fixed;
+  font-weight: bold;
+  bottom: 35%;
+  left: 31%;
+}
+
+.btnLOGIN{
+   border: 1px solid #fff;
+   padding: 10px 30px;
+   color: #fff;
+   text-decoration: none;
+}
+
+.btnLOGIN:hover{
+   background-color: #fff;
+   color: #000;
+   transition: 0.6s ease;
+}
+
+.logout{
+  color: white;
+  font-size: 1.3em;
+   font-weight: bold;
+   position: fixed;
+   top: -1.7%;
+   right: 4%;
+   margin-top: 30px;
+   text-decoration: none;
+}
+
+.logout:hover{
+   color: #808080;
+   transition: 0.6s ease;
+}
+
+.banner-text h3{
+  position: fixed;
+  left: 5%;
+  top: 10%;
+  font-weight: bold;
+  color: #fff;
+  font-size: 55px;
+  margin: 0;
+
+}
+
+.banner-text h4{
+  position: fixed;
+  left: 42%;
+  top: 39%;
+  font-weight: bold;
+  color: #fff;
+  font-size: 30px;
+  margin: 0;
+
+}
+
+.banner-text h5{
+  position: fixed;
+  left: 28%;
+  top: 47%;
+  font-weight: bold;
+  color: #fff;
+  font-size: 35px;
+  margin: 0;
+
+}
