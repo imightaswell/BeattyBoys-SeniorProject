@@ -11,10 +11,7 @@ $username = $_SESSION['username'];
 
 $result = mysqli_query($conn, "SELECT password FROM user WHERE username='$username'");
 
-$data = array();
 
-array_push($data, $result);
-
-echo json_encode($data);
+echo json_encode($result);
 
  ?>
