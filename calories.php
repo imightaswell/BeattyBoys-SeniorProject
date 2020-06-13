@@ -63,7 +63,9 @@
 				cutting = base - (base*.2);
 				bulking = base + (base*.15);
 
-				alert(base);
+				document.getElementById('baseCals').innerHTML = base.toFixed(0);
+				document.getElementById('cuttingCals').innerHTML = cutting.toFixed(0);
+				document.getElementById('bulkingCals').innerHTML = bulking.toFixed(0);
 			}
 		}
 	</script>
@@ -83,9 +85,9 @@
 
 		<!-- Calories row -->
 		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
+			<td><p id="baseCals"></p></td>
+			<td><p id="cuttingCals"></p></td>
+			<td><p id="bulkingCals"></p></td>
 		</tr>
 
 		<!-- Carbs row -->
