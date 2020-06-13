@@ -93,7 +93,7 @@ if (isset($_POST['signin'])) {
 
 //$result = mysqli_query($query);
 
-echo json_encode($_SESSION['username']);
+echo json_encode($_SESSION['password']);
 
 
 
