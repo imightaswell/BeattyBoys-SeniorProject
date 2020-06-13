@@ -1,6 +1,6 @@
 <?php 
 
-include_once('server.php');
+include('server.php');
 
 $username = $_SESSION['username'];
 
