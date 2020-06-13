@@ -38,7 +38,11 @@ include('server.php');
 <body>
 
 <form method="post" action="weightlog.php">
-	<button type="submit" name="weightChange">Get weight from table</button>
+
+	<label for="weight">Enter new weight:</label><br />
+	<input name="weight" type="number" /><br />
+
+	<button type="submit" name="weightChange">Get weight entry from table</button>
 </form>
 
 </body>
