@@ -23,7 +23,7 @@ include('server.php');
 
 	ajax.onreadystatechange = function(){
 
-	if (this.readyState == 4 && this.status == 200){
+	
 
 		var weight = JSON.parse(this.responseText);	
 		alert(weight);
@@ -51,8 +51,8 @@ include('server.php');
 		chart.render();
 
 		}
-	}
-	}
+	
+	
 	</script>
 </head>
 <body>
