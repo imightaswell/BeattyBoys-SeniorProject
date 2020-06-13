@@ -25,9 +25,6 @@ function calories(age, weight, height, gender, activity){
 	
 	var base;
 
-	weight = weight/2.205;
-	height = height*2.54;
-
 	var multiplier;
 
 
