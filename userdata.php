@@ -2,12 +2,10 @@
 
 include('server.php');
 
-$username = $_SESSION['username'];
 
-$query="SELECT password FROM user WHERE username = '$username'";
 
-$result = mysqli_query($query);
+$result = mysqli_query($conn,"SELECT password FROM user WHERE username = '$username'");
 
-echo json_encode($result);
+echo json_encode($username);
 
  ?>
