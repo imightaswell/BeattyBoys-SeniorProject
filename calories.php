@@ -20,8 +20,14 @@
 				//alert(this.responseText);
 				var data = JSON.parse(this.responseText);
 
+				var age = data[0];
+				var weight = data[1];
+				var height = data[2];
 				var gender = data[3];
-				alert(gender);
+				var activity = data[4];
+				
+				weight = weight/2.205;
+				aler(weight);
 				console.log(data);
 			}
 		}
