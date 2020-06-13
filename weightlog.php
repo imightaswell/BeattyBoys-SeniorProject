@@ -11,6 +11,36 @@ if (isset($_GET['logout'])) {
 ?>
 <!DOCTYPE html>
 <html>
+<head>
+	<title>BeattyBoys Fitness - Weight Log</title>
+	<script type="text/javascript">
+		
+	var ajax =  new XMLHttpRequest();
+	var method = "GET";
+	var url = "userdata.php";
+	var asynchronous = true;
+
+	ajax.open(method, url, asynchronous);
+
+	ajax.send();
+
+	ajax.onreadystatechange = function(){
+
+	if (this.readyState == 4 && this.status == 200){
+
+		var data = JSON.parse(this.responseText);	
+		var age = data[0];
+		var weight = data[1];
+		var height = data[2];
+		var gender = data[3];
+		var activity = data[4];
+
+	}
+	}
+	</script>
+</head>
+<body>
+
 <script>
 window.onload = function () {
 
@@ -46,9 +76,6 @@ chart.render();
 
 }
 </script>
-</head>
-<body>
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 </body>
 </html>
