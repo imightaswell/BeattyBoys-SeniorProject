@@ -4,7 +4,7 @@ include('server.php');
 
 $username = $_SESSION['username'];
 
-$query="SELECT password FROM user WHERE username = root";
+$query="SELECT password FROM user WHERE username = '.$username.'";
 
 $result = mysqli_query($query);
 
