@@ -29,33 +29,12 @@ include('server.php');
 	alert(weight);
 	console.log(weight);
 	
-
-	var data = {
-    datasets: [
-        {
-            label: "My First dataset",
-            fillColor: "rgba(220,220,220,0.2)",
-            strokeColor: "rgba(220,220,220,1)",
-            pointColor: "rgba(220,220,220,1)",
-            pointStrokeColor: "#fff",
-            pointHighlightFill: "#fff",
-            pointHighlightStroke: "rgba(220,220,220,1)",
-            data: weight
-        }
-    ]
-};
-
-
-	var cv = $("#canvas").get(0).getContext("2d");
-
-	var mychart = new Chart(cv).Line(data);
-
 	</script>
 </head>
 <body>
 
 
-<canvas id="canvas" height="300" width="500"></canvas>
+
 
 <form method="post" action="weightlog.php">
 
