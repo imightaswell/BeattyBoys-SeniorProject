@@ -52,7 +52,7 @@
 					multiplier = 1.95;
 				}
 
-				if (gender==true){
+				if (gender=="Male"){
 					base=((10*weight+6.25*height-5*age) + 5) * multiplier;
 				}
 
