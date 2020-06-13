@@ -49,7 +49,7 @@ if(isset($_POST['signup'])){
 		mysqli_query($conn,$query);
 
 		$_SESSION['username'] = $username;
-		$_SESSION['password'] = $password;
+		$_SESSION['age'] = $age;
 		$_SESSION['success'] = "You have logged in";
 
 		header('location: index.php');
@@ -76,7 +76,7 @@ if (isset($_POST['signin'])) {
 
 		if(mysqli_num_rows($result)==1){
 			$_SESSION['username'] = $username;
-			$_SESSION['password'] = $password;
+			$_SESSION['age'] = $age;
 			$_SESSION['success'] = "You have logged in";
 
 			header('location: index.php');
