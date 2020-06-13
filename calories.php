@@ -23,10 +23,11 @@
 
 
 	</script>
+	
 </head>
 <body>
 
-	 <p id="weight"></p>
+	
 
 	<table>
 
