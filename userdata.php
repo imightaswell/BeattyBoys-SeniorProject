@@ -2,7 +2,7 @@
 
 include('server.php');
 
-$username = $_SESSION['username'];
+$username = $_SESSION['activity'];
 
 $query="SELECT age FROM user WHERE username LIKE 'root'";
 
