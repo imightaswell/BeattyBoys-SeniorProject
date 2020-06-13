@@ -5,12 +5,14 @@
 <head>
 	<title>BeattyBoys Fitness -Calories & Macronutrients</title>
 
+	<script type="text/javascript">
+		var bool = "<?php echo $weight?>";
+		document.getElementById("weight").innerHTML=bool;
+	</script>
 </head>
 <body>
 
-	<?php if (isset($_SESSION['username'])) : ?> 
-	<p>Signed in as,<strong><?php echo $_SESSION['weight']; ?></strong></p> 
-	<?php endif ?> 
+	 <p id="weight"></p>
 
 	<table>
 

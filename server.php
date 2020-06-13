@@ -32,6 +32,8 @@ if(isset($_POST['signup'])){
 	$activity= $_POST['activity'];
 	$fitness_goal=$_POST['fitness_goal'];
 
+	
+
 	if (empty($username)) { array_push($errors, "Please enter username");}
 	if (empty($password)) { array_push($errors, "Please enter password");}
 	if (empty($age)) { array_push($errors, "Please enter age");}
@@ -47,11 +49,7 @@ if(isset($_POST['signup'])){
 		mysqli_query($conn,$query);
 
 		$_SESSION['username'] = $username;
-		$_SESSION['weight'] = $weight;
-		$_SESSION['height'] = $height;
-		$_SESSION['gender'] = $gender;
-		$_SESSION['activity'] = $activity;
-
+		
 		$_SESSION['success'] = "You have logged in";
 
 		header('location: index.php');
