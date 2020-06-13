@@ -1,6 +1,8 @@
+//Function that returns an array of the recommended amounts of macronutrients someone should consume daily
+//parameters c = calories w = weight in pounds
+//array [Protein, Carbs, Fats]
 function macros(c, w){
 
-	/** Creates an array that will supply the calculated macros. The array will look like: [protein, fats, carbs]**/
 	var array = new Array();
 
 	/** Calculates the protein (1g per pound of body weight) then takes away the calories from the protein from the total **/
@@ -21,6 +23,7 @@ function macros(c, w){
 	
 }
 
+//Function that returns the maintence calories a person should consume daily using the Mifflin-St Jeor equaiton
 function calories(age, weight, height, gender, activity){
 	
 	var base;
@@ -55,6 +58,7 @@ function calories(age, weight, height, gender, activity){
 	return base;
 }
 
+//Creates a connection to the userdata.php file where a users data is retrieved depending on who is logged in 
 var ajax =  new XMLHttpRequest();
 	var method = "GET";
 	var url = "userdata.php";
@@ -76,6 +80,7 @@ var ajax =  new XMLHttpRequest();
 			
 			weight = weight/2.205;
 			height = height*2.54;
+
 
 			var base = calories(age, weight, height, gender, activity);
 			var cutting = base - (base*.2);

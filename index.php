@@ -63,23 +63,24 @@ if (isset($_GET['logout'])) {
 	</div>
 
 <div>  
-		<?php if (isset($_SESSION['username'])) : ?> 
-			<div class="banner-text">
+	<?php if (isset($_SESSION['username'])) : ?> 
+		<div class="banner-text">
 			<h3>WELCOME,</h3>
 			<h4>The clock is ticking.</h4>
 			<h5>Are you becoming the person you want to be?</h5>
-</div>
+		</div>
 
-			<p class= Username><strong><?php echo $_SESSION['username']; ?></strong></p> 
-			<a href="index.php?logout='1'" class="logout">Logout</a>
+		<p class= Username><strong><?php echo $_SESSION['username']; ?></strong></p> 
+		<a href="index.php?logout='1'" class="logout">Logout</a>
 
-<div class="buttonLOGIN">
+		<div class="buttonLOGIN">
 			<a href="calories.php" class="btnLOGIN">Caloric Intake & Macronutrients</a> 
 			<a href="weightlog.php" class="btnLOGIN">Weight Log</a> 
-			<a href="routines.php" class="btnLOGIN">Workout Routines</a> 
-		<?php endif ?> 
-	</div>
-	</div> 
+			<a href="routines.php" class="btnLOGIN">Workout Routines</a>  
+		</div>
+	<?php endif ?>
+
+</div> 
 
 </header>
 </body> 
