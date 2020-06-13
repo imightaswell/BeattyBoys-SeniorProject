@@ -7,7 +7,9 @@ $db = 'beattybo_fitness';
 
 $conn = mysqli_connect($server, $admin, $pw, $db);
 
-$result = mysqli_query($conn, "SELECT password FROM user WHERE username='$_SESSION['username']'");
+$username = $_SESSION['username'];
+
+$result = mysqli_query($conn, "SELECT password FROM user WHERE username='$username'");
 
 $data = array();
 
