@@ -4,14 +4,10 @@ include('server.php');
 
 $username = $_SESSION['username'];
 
-$query="SELECT age FROM user WHERE username LIKE 'root'";
+$query="SELECT password FROM user WHERE username = "root"";
 
 $result = mysqli_query($query);
 
-while ($row = mysqli_fetch_assoc($result)){
-	$data[] = $row;
-}
-
-echo json_encode($username);
+echo json_encode($result);
 
  ?>
