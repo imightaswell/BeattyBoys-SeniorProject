@@ -84,7 +84,7 @@ if (isset($_POST['signin'])) {
 			$_SESSION['success'] = "You have logged in";
 
 			$userdata = array();
-			array_push($userdata, $username, $age, $height, $weight], $gender, $activity);
+			array_push($userdata, $_SESSION['username'], $_SESSION['age'], $_SESSION['height'], $_SESSION['weight'], $_SESSION['gender'], $_SESSION['activity']);
 
 			echo json_encode($userdata);
 			header('location: index.php');
