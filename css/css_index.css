@@ -240,14 +240,14 @@ ul li a:hover{
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 figure.snip1321 {
   font-family: 'Raleway', Arial, sans-serif;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   overflow: hidden;
   margin: 10px;
   min-width: 230px;
   max-width: 315px;
-  width: 100%;
+  /*width: 100%;*/
   color: #000000;
   text-align: center;
   -webkit-perspective: 50em;
