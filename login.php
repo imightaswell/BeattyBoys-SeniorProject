@@ -22,7 +22,7 @@
 		<div class="main">
 			<div class="logo">
 				<a href="index.php">
-				<img src="img/logo2.png"></img>
+				<img src="img/Logo2.png"></img>
 				</a>
 			</div>
 			<ul>
