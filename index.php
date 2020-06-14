@@ -54,7 +54,7 @@ if (isset($_GET['logout'])) {
 
 <div>  
 	<?php if (isset($_SESSION['username'])) : ?> 
-		<div class="banner-text">
+		<div class="animate_animated animate__fadeInDown banner-text">
 			<h3 class ="animate_animated animate__fadeInDown">WELCOME,</h3>
 			<h4 class ="animate_animated animate__fadeInDown">The clock is ticking.</h4>
 			<h5 class ="animate_animated animate__fadeInDown">Are you becoming the person you want to be?</h5>
