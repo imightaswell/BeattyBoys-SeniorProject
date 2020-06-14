@@ -38,7 +38,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{        
 		type: "line",
       	indexLabelFontSize: 16,
-		dataPoints: weight_array
+		dataPoints: y: weight_array
 	}]
 });
 chart.render();
