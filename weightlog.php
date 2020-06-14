@@ -4,13 +4,13 @@
 <head>
 	<title>BeattyBoys Fitness - Weight Log</title>
 
-	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
 	<script src="weight.js"></script>
 
 </head>
 <body>
 
-<canvas id="lineChart" height="400" width="400"></canvas>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
 <form method="post" action="weightlog.php">
 
