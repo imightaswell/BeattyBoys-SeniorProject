@@ -67,13 +67,15 @@ if (isset($_GET['logout'])) {
 		<p class= Username><strong><?php echo $_SESSION['username']; ?></strong></p> 
 		<a href="index.php?logout='1'" class="logout">Logout</a>
 
+		<figure class="snip1321"><img src="img/food.jpeg" alt="sq-sample26"/>
+			<figcaption><i class="ion-pizza"></i>
+			   <h4>Macronutrients</h4>
+			   <h2>Caloric Intake</h2>
+			</figcaption><a href="calories.php"></a>
+		</figure>		
+
 		<div class="buttonLOGIN">
-			<figure class="snip1321"><img src="img/food.jpeg" alt="sq-sample26"/>
-			  <figcaption><i class="ion-pizza"></i>
-			    <h4>Macronutrients</h4>
-			    <h2>Caloric Intake</h2>
-			  </figcaption><a href="calories.php"></a>
-			</figure>			
+				
 			<a href="weightlog.php" class="btnLOGIN">Weight Log</a> 
 			<a href="routines.php" class="btnLOGIN">Workout Routines</a>  
 		</div>
