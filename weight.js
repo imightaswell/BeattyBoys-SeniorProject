@@ -13,6 +13,9 @@ var ajax =  new XMLHttpRequest();
 		
 		var weight =  data[1].split(",");
 
+		for(var i=0;i<weight.length;i++){
+			weight[i] = parseFloat(weight[i]);
+		}
 		console.log(weight);
 	}
 
