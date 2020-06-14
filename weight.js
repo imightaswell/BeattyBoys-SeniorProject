@@ -22,28 +22,28 @@ var ajax =  new XMLHttpRequest();
     }
     echo json_encode($dataPoints, JSON_NUMERIC_CHECK);
 ?>
-<script>
-		window.onload = function () {
 
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2",
-	title:{
-		text: "Simple Line Chart"
-	},
-	axisY:{
-		includeZero: false
-	},
-	data: [{        
-		type: "line",
-      	indexLabelFontSize: 16,
-		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
-	}]
-});
-chart.render();
+window.onload = function () {
+
+	var chart = new CanvasJS.Chart("chartContainer", {
+		animationEnabled: true,
+		theme: "light2",
+		title:{
+			text: "Simple Line Chart"
+		},
+		axisY:{
+			includeZero: false
+		},
+		data: [{        
+			type: "line",
+	      	indexLabelFontSize: 16,
+			dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+		}]
+	});
+	chart.render();
 
 }
-</script>
-	}
+
+	
 
 	
