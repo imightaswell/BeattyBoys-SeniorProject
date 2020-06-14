@@ -347,9 +347,9 @@ figure.snip1321.hover:after {
 
 
 .animate__animated.animate__fadeInDown {
-  --animate-duration: 4s;
+  --animate-duration: 3s;
 }
 
 .animate__animated.animate__fadeIn {
-  --animate-duration: 4s;
+  --animate-duration: 3s;
 }
