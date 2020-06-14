@@ -12,7 +12,6 @@ var ajax =  new XMLHttpRequest();
 		var data = JSON.parse(this.responseText);
 		
 		var weight =  data[1].split(",");
-		$dataPoints = array();
 
 		for(var i=0;i<weight.length;i++){
 			weight[i] = parseFloat(weight[i]);
