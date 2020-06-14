@@ -10,24 +10,10 @@ var ajax =  new XMLHttpRequest();
 
 	ajax.onreadystatechange = function(){
 		var data = JSON.parse(this.responseText);
-		var weight_array = data[1];
+		var weight = data[1];
+		var weight_array = [];
 
-		var chart = new CanvasJS.Chart("chartContainer", {
-			animationEnabled: true,
-			theme: "light2",
-			title:{
-				text: "Simple Line Chart"
-			},
-			axisY:{
-				includeZero: false
-			},
-			data: [{        
-				type: "line",
-      			indexLabelFontSize: 16,
-				dataPoints: weight_array
-			}]
-		});
-		chart.render();
+		alert(weight[0]);
 	}
 
 	
