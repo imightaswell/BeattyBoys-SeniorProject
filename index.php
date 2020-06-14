@@ -55,32 +55,32 @@ if (isset($_GET['logout'])) {
 <div>  
 	<?php if (isset($_SESSION['username'])) : ?> 
 		<div class="animate_animated animate__fadeInDown banner-text">
-			<h3 class ="animate__animated animate__fadeInDown">WELCOME,</h3>
+			<h3 class ="animate__animated animate__fade">WELCOME,</h3>
 			<h4 class ="animate__animated animate__fadeInDown">The clock is ticking.</h4>
 			<h5 class ="animate__animated animate__fadeInDown">Are you becoming the person you want to be?</h5>
 		</div>
 
-		<p class=><strong class ="animate__animated animate__fadeInDown Username"><?php echo $_SESSION['username']; ?></strong></p> 
+		<p class="Username"><strong class="animate__animated animate__fadeInDown"><?php echo $_SESSION['username']; ?></strong></p> 
 		<a href="index.php?logout='1'" class="logout">Logout</a>
 
 
 		<div class="buttonLOGIN">
 
-			<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
+			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/food.jpeg" alt="food"/>
 			  <figcaption><ion-icon name="restaurant-sharp"></ion-icon>
 			    <h4>stuff</h4>
 			    <h2>Caloric Intake</h2>
 			  </figcaption><a href="calories.php"></a>
 			</figure>
 
-			<figure class="snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
+			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
 			  <figcaption><ion-icon name="trending-up-sharp"></ion-icon>
 			    <h4>Stuff</h4>
 			    <h2>Weight Log</h2>
 			  </figcaption><a href="weightlog.php"></a>
 			</figure>
 
-			<figure class="snip1321"><img src="img/workoutroutine.png" alt="workoutroutine"/>
+			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/workoutroutine.png" alt="workoutroutine"/>
 			  <figcaption><ion-icon name="barbell-sharp"></ion-icon>
 			    <h4>Stuff</h4>
 			    <h2>Workout Routine</h2>
