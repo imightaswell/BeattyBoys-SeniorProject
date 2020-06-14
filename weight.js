@@ -13,22 +13,16 @@ var ajax =  new XMLHttpRequest();
 		var userdata_array = userdata.split(",");
 		var weight = userdata_array[1];
 
+		weight = weight.substring(1, weight.length-1);
 		var weight_array = weight.split(".");
 
-		
-		weight_array[weight_array.length-1] = weight_array[weight_array.length-1].substring(0, weight_array[weight_array.length-1].length-1);
-		
-
-		//weight =  data[1].split(",");
-
-		//for(var i=0;i<weight.length;i++){
-			//weight[i] = parseFloat(weight[i]);
-		//}
 		console.log(weight_array);
-		
-		//alert(Array.isArray(userdata));
-		
+		var num =  weight_array[0];
 
+		alert(typeof num);
+
+		console.log(isNan(weight_array[0]));
+		
 		//window.onload = function () {
 
 		//var chart = new CanvasJS.Chart("chartContainer", {
