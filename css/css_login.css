@@ -32,13 +32,13 @@ header{
 
 .logo{
   margin: 0 50px;
-  height: 80px;
-  width: 60px;
+  height: autp;
+  width: 200px;
   float: left;
 }
 .logo_but{
   position: relative;
-  width: 30px;
+  width: 100px;
   height: auto;
   float: left;
 }
