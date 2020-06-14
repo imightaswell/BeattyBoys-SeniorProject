@@ -21,7 +21,9 @@
 		</div>
 		<div class="main">
 			<div class="logo">
-				<input class="logo_but" type="image" src="img/logo2.png"/>
+				<a href="index.php">
+				<img src="img/logo2.png"></img>
+				</a>
 			</div>
 			<ul>
 				<li><a href="#">About Us</a></li>
