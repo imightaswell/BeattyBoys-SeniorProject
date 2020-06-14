@@ -13,13 +13,13 @@ var ajax =  new XMLHttpRequest();
 		
 		var weight = [];
 
-		weight =  data[1].split(",");
+		//weight =  data[1].split(",");
 
-		for(var i=0;i<weight.length;i++){
-			weight[i] = parseFloat(weight[i]);
-		}
-		console.log(weight);
-		console.log(weight[0]*2);
+		//for(var i=0;i<weight.length;i++){
+			//weight[i] = parseFloat(weight[i]);
+		//}
+		console.log(data[1]);
+		
 		alert(this.responseText);
 
 		//window.onload = function () {
