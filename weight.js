@@ -34,7 +34,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{        
 		type: "line",
       	indexLabelFontSize: 16,
-		dataPoints: echo json_encode($dataPoints, JSON_NUMERIC_CHECK);
+		dataPoints: echo json_encode($dataPoints);
 	}]
 });
 chart.render();
