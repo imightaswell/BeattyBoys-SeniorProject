@@ -22,29 +22,42 @@ var ajax =  new XMLHttpRequest();
 			weight_array[i] = parseFloat(weight_array[i]);
 		}
 
+		var chart_array = [];
+
+		for (var i=0; i<weight_array.length;i++){
+			chart_array.push({"y":weight_array});
+		}
+
 		//alert(typeof weight_array[0]);
 
-	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer", {
+  			zoomEnabled:true,
+   			panEnabled:true,
+  		  	animationEnabled:true,
+   		 	title:{
+   		    	text: "myChart from mySQL database"
+   				},
+		
+   		 		axisX:{
+   		    	title: "TimeStamp"
+   		 		},
+		
+   		     	axisY:{
+   		     	title: "myDataPoints",
+   		     	minimum: 0
+   		 		},
+		
+   		 		data: [{
+   		     	type: "line",
+    		    dataPoints:
+    		        chart_array
+    		    }]
+		});
+		chart.render();
 
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2",
-	title:{
-		text: "Simple Line Chart"
-	},
-	axisY:{
-		includeZero: false
-	},
-	data: [{        
-		type: "line",
-      	indexLabelFontSize: 16,
-		dataPoints: y: weight_array
-	}]
-});
-chart.render();
+		console.log(charty_array[0]);
+}
 
-}
-}
 
 		
 		
