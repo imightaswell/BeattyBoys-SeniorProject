@@ -17,7 +17,7 @@ var ajax =  new XMLHttpRequest();
 			weight[i] = parseFloat(weight[i]);
 		}
 
-		console.log(weight[0]*2);
+		alert(weight[1]);
 
 		window.onload = function () {
 
