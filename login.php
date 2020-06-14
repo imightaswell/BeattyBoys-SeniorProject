@@ -21,7 +21,7 @@
 		</div>
 		<div class="main">
 			<div class="logo">
-				<input type="image" src="img/logo2.png"/>
+				<input class="logo_but" type="image" src="img/logo2.png"/>
 			</div>
 			<ul>
 				<li><a href="#">About Us</a></li>
