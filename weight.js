@@ -13,10 +13,11 @@ var ajax =  new XMLHttpRequest();
 		var userdata_array = userdata.split(",");
 		var weight = userdata_array[1];
 
+		weight = weight.substring(1, weight.length-1);
 		var weight_array = weight.split(".");
 
 		
-		weight_array[weight_array.length-1] = weight_array[weight_array.length-1].substring(0, weight_array[weight_array.length-1].length-1);
+		
 		
 
 		//weight =  data[1].split(",");
