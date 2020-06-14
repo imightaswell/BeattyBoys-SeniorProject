@@ -20,7 +20,7 @@
 		<div class ="blackbar">
 		</div>
 		<div class="main">
-			<div class="logo_con">
+			<div class="logo">
 				<button class="logo" onclick="window.location.href='index.php';"> </button>
 			</div>
 			<ul>
