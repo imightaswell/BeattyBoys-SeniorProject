@@ -32,7 +32,7 @@ header{
 
 .logo{
   background-image: url("img/logo2.png");
-  position: fixed;
+  position: relative;
   margin: 0 50px;
   height: 60px;
   float: left;
