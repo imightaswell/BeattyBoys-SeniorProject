@@ -74,14 +74,18 @@ if (isset($_GET['logout'])) {
 			</figcaption><a href="calories.php"></a>
 		</figure>		
 
+
+			
+
+
 		<div class="buttonLOGIN">
-			<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
+		<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
 				<figcaption><i class="ion-pizza"></i>
 				   <h4>Macronutrients</h4>
 				   <h2>Caloric Intake</h2>
 				</figcaption><a href="calories.php"></a>
 			</figure>	
-					
+
 			<a href="weightlog.php" class="btnLOGIN">Weight Log</a> 
 			<a href="routines.php" class="btnLOGIN">Workout Routines</a>  
 		</div>
