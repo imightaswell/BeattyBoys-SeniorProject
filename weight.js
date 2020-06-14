@@ -17,11 +17,15 @@ var ajax =  new XMLHttpRequest();
 		var weight_array = weight.split(".");
 
 		console.log(weight_array);
+
+		for (var i=0; i<weight_array.legth;i++){
+			weight_array[i] = parseFloat(weight_array[i]);
+		}
+
 		var num =  weight_array[0];
 
 		alert(typeof num);
 
-		console.log(isNan(weight_array[0]));
 		
 		//window.onload = function () {
 
