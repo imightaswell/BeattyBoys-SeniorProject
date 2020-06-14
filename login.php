@@ -21,7 +21,7 @@
 		</div>
 		<div class="main">
 			<div class="logo">
-				<button class="logo" onclick="window.location.href='index.php';"> </button>
+				<button class="logo_but" onclick="window.location.href='index.php';"> </button>
 			</div>
 			<ul>
 				<li><a href="#">About Us</a></li>
