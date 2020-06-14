@@ -41,7 +41,7 @@ var ajax =  new XMLHttpRequest();
 			data: [{        
 				type: "line",
       			indexLabelFontSize: 16,
-				dataPoints : weight_array;
+				dataPoints : weight_array
 			});
 		chart.render();
 		}
