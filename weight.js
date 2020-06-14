@@ -12,5 +12,3 @@ var ajax =  new XMLHttpRequest();
 		var weight =  new Array();
 		weight = JSON.parse(this.responseText);
 	}
-
-	alert(weight);
