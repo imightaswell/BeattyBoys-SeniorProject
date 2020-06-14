@@ -21,29 +21,27 @@ var ajax =  new XMLHttpRequest();
 
 		window.onload = function () {
 
-var chart = new CanvasJS.Chart("chartContainer", {
-	animationEnabled: true,
-	theme: "light2",
-	title:{
-		text: "Simple Line Chart"
-	},
-	axisY:{
-		includeZero: false
-	},
-	data: [{        
-		type: "line",
-      	indexLabelFontSize: 16,
-		datasets: [
-		{
-			label: "Weight Entries"
-			data: weight
+		var chart = new CanvasJS.Chart("chartContainer", {
+			animationEnabled: true,
+			theme: "light2",
+			title:{
+				text: "Simple Line Chart"
+			},
+			axisY:{
+				includeZero: false
+			},
+			data: [{        
+				type: "line",
+      			indexLabelFontSize: 16,
+				datasets: [
+				{
+					label: "Weight Entries"
+					data: [1,2,3]
+				}
+			}]
+			});
+		chart.render();
 		}
-	}]
-});
-chart.render();
-
-}
-
 	}
 
 	
