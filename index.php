@@ -80,8 +80,13 @@ if (isset($_GET['logout'])) {
 		  </figcaption><a href="weightlog.php"></a>
 		</figure>
 
-		
-			<a href="weightlog.php" class="btnLOGIN">Weight Log</a> 
+		<figure class="snip1321"><img src="img/workoutroutine.png" alt="workoutroutine"/>
+		  <figcaption><ion-icon name="barbell-sharp"></ion-icon>
+		    <h4>Stuff</h4>
+		    <h2>Workout Routine</h2>
+		  </figcaption><a href="weightlog.php"></a>
+		</figure>
+
 			<a href="routines.php" class="btnLOGIN">Workout Routines</a>  
 		</div>
 	<?php endif ?>
