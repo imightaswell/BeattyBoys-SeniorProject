@@ -7,8 +7,12 @@ var ajax =  new XMLHttpRequest();
 
 	ajax.send();
 
+	var weight =  new Array();
+
 	ajax.onreadystatechange = function(){
 		
-		var weight =  new Array();
+		
 		weight = JSON.parse(this.responseText);
 	}
+
+	
