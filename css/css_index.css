@@ -261,6 +261,7 @@ figure.snip1321 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
   overflow: hidden;
+  display:inline-block;
   margin: 10px;
   min-width: 230px;
   max-width: 315px;
