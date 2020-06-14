@@ -22,29 +22,30 @@ var ajax =  new XMLHttpRequest();
 			weight_array[i] = parseFloat(weight_array[i]);
 		}
 
-		
-
 		//alert(typeof weight_array[0]);
 
-		
-		window.onload = function () {
+	window.onload = function () {
 
-		var chart = new CanvasJS.Chart("chartContainer", {
-			animationEnabled: true,
-			theme: "light2",
-			title:{
-				text: "Simple Line Chart"
-			},
-			axisY:{
-				includeZero: false
-			},
-			data: [{        
-				type: "line",
-      			indexLabelFontSize: 16,
-				dataPoints : weight_array
-			});
-		chart.render();
-		}
-	}
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Simple Line Chart"
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: weight_array
+	}]
+});
+chart.render();
+
+}
+
+		
+		
 
 	
