@@ -17,18 +17,17 @@ var ajax =  new XMLHttpRequest();
 			weight[i] = parseFloat(weight[i]);
 		}
 
-		var chart = new CanvasJS.Chart("chartContainer", {
- 		 title: {
-    		text: " Populating chart using array "
-  		},
-  		data: [{
-    		type: "line",
-    		dataPoints: weight
-  		}]
-		});
-
-		chart.render();
-		console.log(weight);
+		const CHART = document.getElementById("lineChart");
+		console.log(CHART);
+		let lineChart =  new Chart(CHART, {
+			type:'line',
+			data:{
+				datasets: [
+				{
+					data: weight
+				}]
+			}
+		})
 	}
 
 	
