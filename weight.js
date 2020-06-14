@@ -11,8 +11,9 @@ var ajax =  new XMLHttpRequest();
 	ajax.onreadystatechange = function(){
 		var data = JSON.parse(this.responseText);
 		
+		var weight =  data[1].split(",");
 
-		console.log(data[1]);
+		console.log(weight);
 	}
 
 	
