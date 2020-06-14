@@ -17,6 +17,13 @@ var ajax =  new XMLHttpRequest();
 		var weight_array = weight.split(".");
 
 		console.log(weight_array);
+		var num =  weight_array[0];
+		
+		if (isNaN(num)){
+			alert("These are nums");
+		}
+		else {alert("These are not nums")}
+
 		console.log(isNan(weight_array[0]));
 		
 		//window.onload = function () {
