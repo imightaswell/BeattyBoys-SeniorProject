@@ -25,7 +25,8 @@ var ajax =  new XMLHttpRequest();
 		//}
 		console.log(weight_array);
 		
-		alert(this.responseText);
+		alert(Array.isArray(weight_array));
+		
 
 		//window.onload = function () {
 
