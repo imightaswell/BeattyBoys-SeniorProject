@@ -24,23 +24,19 @@ if (isset($_GET['logout'])) {
 	<header class="fix">
 		<video src="img/indexbg.mp4" class="vid-bg" autoplay loop muted></video>
 	<div class="nav-area">
-	</div>
 		<!-- Cropped off code -->
-	<div class ="blackbar">
+<div class ="blackbar">
 	</div>
-
 	<div class="main">
 			<div class="logo">
 				<a href="index.php">
 				<img src="img/logo2.png"></img>
 				</a>
 			</div>
-
 			<ul>
 				<li><a href="#">About Us</a></li>
 			</ul>
-	</div>
-
+		</div>
 
 	<div class ="banner-text">
 		<?php if (!isset($_SESSION['username'])) : ?>
@@ -66,14 +62,8 @@ if (isset($_GET['logout'])) {
 
 		<p class= Username><strong><?php echo $_SESSION['username']; ?></strong></p> 
 		<a href="index.php?logout='1'" class="logout">Logout</a>
-	
-
-
-			
-
 
 		<div class="buttonLOGIN">
-		<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
 			<a href="calories.php" class="btnLOGIN">Caloric Intake & Macronutrients</a> 
 			<a href="weightlog.php" class="btnLOGIN">Weight Log</a> 
 			<a href="routines.php" class="btnLOGIN">Workout Routines</a>  
