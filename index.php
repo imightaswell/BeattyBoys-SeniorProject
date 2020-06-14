@@ -66,28 +66,27 @@ if (isset($_GET['logout'])) {
 
 		<div class="buttonLOGIN">
 
-		<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
-		  <figcaption><ion-icon name="restaurant-sharp"></ion-icon>
-		    <h4>stuff</h4>
-		    <h2>Caloric Intake</h2>
-		  </figcaption><a href="calories.php"></a>
-		</figure>
+			<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
+			  <figcaption><ion-icon name="restaurant-sharp"></ion-icon>
+			    <h4>stuff</h4>
+			    <h2>Caloric Intake</h2>
+			  </figcaption><a href="calories.php"></a>
+			</figure>
 
-		<figure class="snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
-		  <figcaption><ion-icon name="trending-up-sharp"></ion-icon>
-		    <h4>Stuff</h4>
-		    <h2>Weight Log</h2>
-		  </figcaption><a href="weightlog.php"></a>
-		</figure>
+			<figure class="snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
+			  <figcaption><ion-icon name="trending-up-sharp"></ion-icon>
+			    <h4>Stuff</h4>
+			    <h2>Weight Log</h2>
+			  </figcaption><a href="weightlog.php"></a>
+			</figure>
 
-		<figure class="snip1321"><img src="img/workoutroutine.png" alt="workoutroutine"/>
-		  <figcaption><ion-icon name="barbell-sharp"></ion-icon>
-		    <h4>Stuff</h4>
-		    <h2>Workout Routine</h2>
-		  </figcaption><a href="weightlog.php"></a>
-		</figure>
-
-			<a href="routines.php" class="btnLOGIN">Workout Routines</a>  
+			<figure class="snip1321"><img src="img/workoutroutine.png" alt="workoutroutine"/>
+			  <figcaption><ion-icon name="barbell-sharp"></ion-icon>
+			    <h4>Stuff</h4>
+			    <h2>Workout Routine</h2>
+			  </figcaption><a href="routines.php"></a>
+			</figure>
+		
 		</div>
 	<?php endif ?>
 </div> 
