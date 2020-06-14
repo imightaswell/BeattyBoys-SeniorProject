@@ -33,7 +33,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{        
 		type: "line",
       	indexLabelFontSize: 16,
-		dataPoints: echo JSON.parse($dataPoints);
+		dataPoints: <?php echo json_encode($dataPoints); ?>
 	}]
 });
 chart.render();
