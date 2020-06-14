@@ -12,22 +12,22 @@ include('server.php');
 
 	<script>
 
-	var ajax =  new XMLHttpRequest();
-	var method = "GET";
-	var url = "server.php";
-	var asynchronous = true;
+		var ajax =  new XMLHttpRequest();
+		var method = "GET";
+		var url = "server.php";
+		var asynchronous = true;
 
-	ajax.open(method, url, asynchronous);
+		ajax.open(method, url, asynchronous);
 
-	ajax.send();
+		ajax.send();
 
-	ajax.onreadystatechange = function(){
+		ajax.onreadystatechange = function(){
 
-	var weight =  new Array();
-	weight = JSON.parse(this.responseText);	
+		var weight =  new Array();
+		weight = JSON.parse(this.responseText);	
 
-	alert(weight);
-	console.log(weight);
+		alert(weight);
+		console.log(weight);
 	
 	</script>
 </head>
