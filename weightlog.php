@@ -24,7 +24,7 @@ include('server.php');
 		ajax.onreadystatechange = function(){
 
 		var weight =  new Array();
-		weight = JSON.parse(this.responseText);	
+		//weight = JSON.parse(this.responseText);	
 
 		alert(this.responseText);
 		console.log(weight);
