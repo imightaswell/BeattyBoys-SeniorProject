@@ -9,8 +9,8 @@ var ajax =  new XMLHttpRequest();
 
 
 	ajax.onreadystatechange = function(){
-		var weight = JSON.parse(this.responseText);
-		alert(weight);
+		var data = JSON.parse(this.responseText);
+		alert(data['weight']);
 	}
 
 	
