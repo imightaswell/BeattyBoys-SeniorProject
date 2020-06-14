@@ -97,7 +97,7 @@ if (isset($_POST['weightChange'])){
 	$result = mysqli_fetch_assoc($result);
 	$weight = $result['weight'];
 
-	$weight = $weight . "," . $_POST['weight'];
+	$weight = $weight . "." . $_POST['weight'];
 
 	$weight_array = explode(",", $weight);
 	
