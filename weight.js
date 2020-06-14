@@ -25,7 +25,7 @@ var ajax =  new XMLHttpRequest();
 		var chart_array = [];
 
 		for (var i=0; i<weight_array.length;i++){
-			charty_array.push({"y":weight_array});
+			chart_array.push({"y":weight_array});
 		}
 
 		//alert(typeof weight_array[0]);
