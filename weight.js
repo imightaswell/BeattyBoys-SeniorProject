@@ -17,6 +17,8 @@ var ajax =  new XMLHttpRequest();
 			weight[i] = parseFloat(weight[i]);
 		}
 
+		
+
 		window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
