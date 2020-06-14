@@ -31,16 +31,10 @@ header{
 }
 
 .logo{
-  background-image: url("img/logo2.png");
   margin: 0 50px;
-  height: 60px;
-  width: 40px;
+  height: 80px;
+  width: 60px;
   float: left;
-  color: #fff;
-  font-size: 35px;
-  text-transform: capitalize;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 .logo_but{
   background-image: url("img/logo2.png");
