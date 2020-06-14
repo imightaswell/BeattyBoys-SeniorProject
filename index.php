@@ -16,6 +16,7 @@ if (isset($_GET['logout'])) {
 	<meta name="viewport" content="width=device-width, inital-scale=1">
 	<title>Beatty Boyz Fitness</title>
 	<link rel="stylesheet" href="css/css_index.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 </head>  
 
 <body>
