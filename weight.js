@@ -1,4 +1,3 @@
-<?php
 var ajax =  new XMLHttpRequest();
 	var method = "GET";
 	var url = "userweight.php";
@@ -21,7 +20,6 @@ var ajax =  new XMLHttpRequest();
 		}
     }
     echo json_encode($dataPoints, JSON_NUMERIC_CHECK);
-?>
 
 window.onload = function () {
 
