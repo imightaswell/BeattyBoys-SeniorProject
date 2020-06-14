@@ -30,32 +30,7 @@ var ajax =  new XMLHttpRequest();
 
 		//alert(typeof weight_array[0]);
 
-		var chart = new CanvasJS.Chart("chartContainer", {
-  			zoomEnabled:true,
-   			panEnabled:true,
-  		  	animationEnabled:true,
-   		 	title:{
-   		    	text: "myChart from mySQL database"
-   				},
 		
-   		 		axisX:{
-   		    	title: "TimeStamp"
-   		 		},
-		
-   		     	axisY:{
-   		     	title: "myDataPoints",
-   		     	minimum: 0
-   		 		},
-		
-   		 		data: [{
-   		     	type: "line",
-    		    dataPoints:
-    		        chart_array
-    		    }]
-		});
-		chart.render();
-
-		console.log(charty_array[0]);
 }
 
 
