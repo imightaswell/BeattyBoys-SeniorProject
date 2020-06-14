@@ -37,7 +37,7 @@ header{
   float: left;
 }
 .logo_but{
-  background-image: url(img/logo2.png);
+  background-image: url("img/logo2.png") !important;
   background-repeat: no-repeat;
   position: relative;
   height: 60px;
