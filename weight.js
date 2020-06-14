@@ -7,6 +7,8 @@ var ajax =  new XMLHttpRequest();
 
 	ajax.send();
 
+	$dataPoints = array();
+
 
 	ajax.onreadystatechange = function(){
 		var data = JSON.parse(this.responseText);
@@ -15,6 +17,7 @@ var ajax =  new XMLHttpRequest();
 
 		for(var i=0;i<weight.length;i++){
 			weight[i] = parseFloat(weight[i]);
+			array_push($dataPoints, $weight);
 		}
 
 		window.onload = function () {
@@ -31,7 +34,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{        
 		type: "line",
       	indexLabelFontSize: 16,
-		dataPoints: [weight]
+		dataPoints: echo json_encode($dataPoints, JSON_NUMERIC_CHECK);
 	}]
 });
 chart.render();
