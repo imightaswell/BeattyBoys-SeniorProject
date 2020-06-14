@@ -63,17 +63,11 @@ if (isset($_GET['logout'])) {
 		<p class= Username><strong><?php echo $_SESSION['username']; ?></strong></p> 
 		<a href="index.php?logout='1'" class="logout">Logout</a>
 
-		<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
-		  <figcaption><i class="ion-pizza"></i>
-		    <h4>Caloric Intake</h4>
-		    <h2>stuff</h2>
-		  </figcaption><a href="calories.php"></a>
-		</figure>
 
 		<div class="buttonLOGIN">
 
 		<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
-		  <figcaption><i class="ion-pizza"></i>
+		  <figcaption><ion-icon name="heart"></ion-icon>
 		    <h4>Caloric Intake</h4>
 		    <h2>stuff</h2>
 		  </figcaption><a href="calories.php"></a>
@@ -85,7 +79,7 @@ if (isset($_GET['logout'])) {
 		</div>
 	<?php endif ?>
 </div> 
-
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </header>
 </body> 
 </html> 
