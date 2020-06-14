@@ -185,6 +185,8 @@ ul li a:hover{
 .buttonLOGIN{
   position: fixed;
   font-weight: bold;
+  width: 900px;
+  width: 100%;
   bottom: 35%;
   left: 31%;
 }
