@@ -60,7 +60,7 @@ if (isset($_GET['logout'])) {
 			<h5 class ="animate__animated animate__fadeInDown">Are you becoming the person you want to be?</h5>
 		</div>
 
-		<p class= Username><strong><?php echo $_SESSION['username']; ?></strong></p> 
+		<p class="animate__animated animate__fadeInDown Username"><strong><?php echo $_SESSION['username']; ?></strong></p> 
 		<a href="index.php?logout='1'" class="logout">Logout</a>
 
 
