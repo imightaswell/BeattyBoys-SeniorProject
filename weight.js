@@ -22,9 +22,9 @@ var ajax =  new XMLHttpRequest();
 			weight_array[i] = parseFloat(weight_array[i]);
 		}
 
-		var num =  weight_array[0];
+		//var num =  weight_array[0];
 
-		alert(typeof num);
+		alert(typeof weight_array[0]);
 
 		
 		//window.onload = function () {
