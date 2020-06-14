@@ -18,7 +18,7 @@ var ajax =  new XMLHttpRequest();
 
 		console.log(weight_array);
 
-		for (var i=0; i<weight_array.legth;i++){
+		for (var i=0; i<weight_array.length;i++){
 			weight_array[i] = parseFloat(weight_array[i]);
 		}
 
