@@ -28,7 +28,6 @@ include('server.php');
 
 		alert(weight);
 		console.log(weight);
-	
 	</script>
 </head>
 <body>
