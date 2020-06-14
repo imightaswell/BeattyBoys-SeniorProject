@@ -14,7 +14,6 @@ if (isset($_GET['logout'])) {
 <head lang="en">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 	<title>Beatty Boyz Fitness</title>
 	<link rel="stylesheet" href="css/css_index.css"/>
 </head>  
@@ -55,9 +54,9 @@ if (isset($_GET['logout'])) {
 <div>  
 	<?php if (isset($_SESSION['username'])) : ?> 
 		<div class="banner-text">
-			<h3 class ="animate__fadeInDown">WELCOME,</h3>
-			<h4 class ="animate__fadeInDown">The clock is ticking.</h4>
-			<h5 class ="animate__fadeInDown">Are you becoming the person you want to be?</h5>
+			<h3 class ="animate_animated animate__fadeInDown">WELCOME,</h3>
+			<h4 class ="animate_animated animate__fadeInDown">The clock is ticking.</h4>
+			<h5 class ="animate_animated animate__fadeInDown">Are you becoming the person you want to be?</h5>
 		</div>
 
 		<p class= Username><strong><?php echo $_SESSION['username']; ?></strong></p> 
