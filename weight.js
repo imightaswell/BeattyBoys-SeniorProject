@@ -10,7 +10,19 @@ var ajax =  new XMLHttpRequest();
 
 	ajax.onreadystatechange = function(){
 		var data = JSON.parse(this.responseText);
-		alert(data[1]);
+		var weight_array = data[1];
+
+		var chart = new CanvasJS.Chart("chartContainer", {
+  title: {
+    text: " Populating chart using array "
+  },
+  data: [{
+    type: "line",
+    dataPoints: dataPoints
+  }]
+});
+
+chart.render();
 	}
 
 	

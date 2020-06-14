@@ -9,13 +9,13 @@
 	</script>
 </head>
 <body>
-
+<div id="chartContainer" style="height: 360px; width: 100%;"></div><br>
 <form method="post" action="weightlog.php">
 
 	<label for="weight">Enter new weight:</label><br />
 	<input name="weight" type="number" /><br />
 
-	<button type="submit" name="weightChange">Get weight entry from table</button>
+	<button type="submit" name="weightChange">Submit</button>
 </form>
 
 </body>
