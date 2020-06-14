@@ -15,30 +15,33 @@ var ajax =  new XMLHttpRequest();
 
 		weight = weight.substring(1, weight.length-1);
 		var weight_array = weight.split(".");
-		
-		window.onload = function () {
 
-		var chart = new CanvasJS.Chart("chartContainer", {
-			animationEnabled: true,
-			theme: "light2",
-			title:{
-				text: "Simple Line Chart"
-			},
-			axisY:{
-				includeZero: false
-			},
-			data: [{        
-				type: "line",
-      			indexLabelFontSize: 16,
-				datasets: [
-				{
-					label: "Weight Entries"
-					data: [1,2,3]
-				}
-			}]
-			});
-		chart.render();
-		}
+		console.log(weight_array);
+		console.log(isNan(weight_array[0]));
+		
+		//window.onload = function () {
+
+		//var chart = new CanvasJS.Chart("chartContainer", {
+			//animationEnabled: true,
+			//theme: "light2",
+			//title:{
+				//text: "Simple Line Chart"
+			//},
+			//axisY:{
+				//includeZero: false
+			//},
+			//data: [{        
+				//type: "line",
+      			//indexLabelFontSize: 16,
+				//datasets: [
+				//{
+				//	label: "Weight Entries"
+				//	data: [1,2,3]
+				//}
+		//	}]
+		//	});
+		//chart.render();
+		//}
 	}
 
 	
