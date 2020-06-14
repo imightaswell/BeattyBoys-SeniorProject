@@ -15,7 +15,8 @@ var ajax =  new XMLHttpRequest();
 
 		var weight_array = weight.split(".");
 
-		
+		weight_array[0] = weight[0].slice(1);
+		weight_array[weight_array.length-1] = weight_array[weight_array.length-1].substring(0, weight_array[weight_array.length-1].length-1);
 		
 
 		//weight =  data[1].split(",");
