@@ -11,9 +11,12 @@ var ajax =  new XMLHttpRequest();
 	ajax.onreadystatechange = function(){
 		var userdata = this.responseText;
 		var userdata_array = userdata.split(",");
-		var weight_array = userdata_array[1];
+		var weight = userdata_array[1];
+
+		var weight_array = weight.split(".");
+
 		
-		var weight = [];
+		
 
 		//weight =  data[1].split(",");
 
