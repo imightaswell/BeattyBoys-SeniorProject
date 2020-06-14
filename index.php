@@ -67,7 +67,7 @@ if (isset($_GET['logout'])) {
 		<div class="buttonLOGIN">
 
 		<figure class="snip1321"><img src="img/food.jpeg" alt="food"/>
-		  <figcaption><ion-icon name="heart"></ion-icon>
+		  <figcaption><ion-icon name="restaurant-sharp"></ion-icon>
 		    <h4>Caloric Intake</h4>
 		    <h2>stuff</h2>
 		  </figcaption><a href="calories.php"></a>
