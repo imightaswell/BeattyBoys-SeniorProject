@@ -1,6 +1,6 @@
 var ajax =  new XMLHttpRequest();
 	var method = "GET";
-	var url = "server.php";
+	var url = "userweight.php";
 	var asynchronous = true;
 
 	ajax.open(method, url, asynchronous);
@@ -10,8 +10,6 @@ var ajax =  new XMLHttpRequest();
 	var weight =  new Array();
 
 	ajax.onreadystatechange = function(){
-		
-		
 		weight = JSON.parse(this.responseText);
 	}
 
