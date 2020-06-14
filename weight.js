@@ -8,8 +8,8 @@ var ajax =  new XMLHttpRequest();
 	ajax.send();
 
 	ajax.onreadystatechange = function(){
-		if (this.readyState == 4 && this.status == 200){
+		
 		var weight =  new Array();
 		weight = JSON.parse(this.responseText);
-		}	
+			
 	}

@@ -100,7 +100,7 @@ if (isset($_POST['weightChange'])){
 	$weight = $weight . "," . $_POST['weight'];
 
 	$weight_array = explode(",", $weight);
-	//echo "<script type='text/javascript'>alert('$weight');</script>";
+	
 	echo json_encode($weight_array);
 
 	$query = "UPDATE user SET weight='$weight' WHERE username='$username'";
