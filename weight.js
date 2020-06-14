@@ -19,7 +19,6 @@ var ajax =  new XMLHttpRequest();
 			$dataPoints = weight[i];
 		}
     }
-    echo json_encode($dataPoints, JSON_NUMERIC_CHECK);
 
 window.onload = function () {
 
@@ -35,7 +34,7 @@ window.onload = function () {
 		data: [{        
 			type: "line",
 	      	indexLabelFontSize: 16,
-			dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
+			dataPoints: [weight]
 		}]
 	});
 	chart.render();
