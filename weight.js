@@ -13,16 +13,16 @@ var ajax =  new XMLHttpRequest();
 		var weight_array = data[1];
 
 		var chart = new CanvasJS.Chart("chartContainer", {
-  title: {
-    text: " Populating chart using array "
-  },
-  data: [{
-    type: "line",
-    dataPoints: dataPoints
-  }]
-});
+ 			title: {
+    		text: " Populating chart using array "
+  			},
+  			data: [{
+    		type: "line",
+    		dataPoints: weight_array
+  			}]
+		});
 
-chart.render();
+		chart.render();
 	}
 
 	
