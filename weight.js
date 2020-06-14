@@ -9,13 +9,16 @@ var ajax =  new XMLHttpRequest();
 
 
 	ajax.onreadystatechange = function(){
-		var data = JSON.parse(this.responseText);
+		if(ajax.readyState == 4 && xhttp.status == 200) {
+        var data = JSON.parse(this.responseText);
 		
 		var weight =  data[1].split(",");
 
 		for(var i=0;i<weight.length;i++){
 			weight[i] = parseFloat(weight[i]);
 		}
+    }
+		
 
 		window.onload = function () {
 
