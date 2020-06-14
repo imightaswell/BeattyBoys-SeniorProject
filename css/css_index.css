@@ -344,3 +344,8 @@ figure.snip1321.hover:after {
   transform: rotateX(0);
   opacity: 0.9;
 }
+
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 4s;
+}
