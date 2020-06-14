@@ -1,4 +1,3 @@
-
 body{
   margin: 0;
   padding: 0;
@@ -119,6 +118,7 @@ ul li a:hover{
    cursor: pointer;
 }
 
+/* Esti css (Logo Css) */
 .logo span {
   cursor: pointer;
   display: inline-block;
@@ -143,6 +143,8 @@ ul li a:hover{
   opacity: 1;
   right: 0;
 }
+
+/*end*/
 
 .main{
    max-width: 1200px;
