@@ -21,9 +21,7 @@
 		</div>
 		<div class="main">
 			<div class="logo">
-				<a href="index.php">
-				<img src="img/logo2.png"></img>
-				</a>
+				<button class="logo" onclick="window.location.href='index.php';"> </button>
 			</div>
 			<ul>
 				<li><a href="#">About Us</a></li>
