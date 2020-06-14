@@ -15,7 +15,7 @@
 <!--<div id="chartContainer" style="height: 370px; width: 100%;"></div>-->
 
 
-<canvas id="myChart" width="400" height="400"></canvas>
+<canvas id="myChart" width="100" height="100"></canvas>
 
 
 <form method="post" action="weightlog.php">
