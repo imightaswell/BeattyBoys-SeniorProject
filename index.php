@@ -66,21 +66,21 @@ if (isset($_GET['logout'])) {
 
 		<div class="buttonLOGIN">
 
-			<figure class="animate__animated animate__fadeInDown snip1321"><img src="img/food.jpeg" alt="food"/>
+			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/food.jpeg" alt="food"/>
 			  <figcaption><ion-icon name="restaurant-sharp"></ion-icon>
 			    <h4>stuff</h4>
 			    <h2>Caloric Intake</h2>
 			  </figcaption><a href="calories.php"></a>
 			</figure>
 
-			<figure class="animate__animated animate__fadeInDown snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
+			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
 			  <figcaption><ion-icon name="trending-up-sharp"></ion-icon>
 			    <h4>Stuff</h4>
 			    <h2>Weight Log</h2>
 			  </figcaption><a href="weightlog.php"></a>
 			</figure>
 
-			<figure class="animate__animated animate__fadeInDown snip1321"><img src="img/workoutroutine.png" alt="workoutroutine"/>
+			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/workoutroutine.png" alt="workoutroutine"/>
 			  <figcaption><ion-icon name="barbell-sharp"></ion-icon>
 			    <h4>Stuff</h4>
 			    <h2>Workout Routine</h2>
