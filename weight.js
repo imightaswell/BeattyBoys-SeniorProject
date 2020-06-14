@@ -22,7 +22,12 @@ var ajax =  new XMLHttpRequest();
 			weight_array[i] = parseFloat(weight_array[i]);
 		}
 
+		var labels = [];
+		
 
+		for (var i=1;i<weight_array.length;i++){
+			labels.push(i);
+		}
 		//alert(typeof weight_array[0]);
 
 
@@ -30,7 +35,7 @@ var ajax =  new XMLHttpRequest();
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [],
+        labels: labels,
         datasets: [{
             label: '# of Votes',
             data: weight_array,
