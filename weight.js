@@ -17,17 +17,27 @@ var ajax =  new XMLHttpRequest();
 			weight[i] = parseFloat(weight[i]);
 		}
 
-		const CHART = document.getElementById("lineChart");
-		console.log(CHART);
-		let lineChart =  new Chart(CHART, {
-			type:'line',
-			data:{
-				datasets: [
-				{
-					data: weight
-				}]
-			}
-		})
+		window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2",
+	title:{
+		text: "Simple Line Chart"
+	},
+	axisY:{
+		includeZero: false
+	},
+	data: [{        
+		type: "line",
+      	indexLabelFontSize: 16,
+		dataPoints: [weight]
+	}]
+});
+chart.render();
+
+}
+
 	}
 
 	
