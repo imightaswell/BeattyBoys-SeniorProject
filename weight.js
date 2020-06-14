@@ -9,7 +9,9 @@ var ajax =  new XMLHttpRequest();
 
 
 	ajax.onreadystatechange = function(){
-		var data = this.responseText;
+		var userdata = this.responseText;
+		var userdata_array = userdata.split(",");
+		var weight_array = userdata_array[1];
 		
 		var weight = [];
 
@@ -18,7 +20,7 @@ var ajax =  new XMLHttpRequest();
 		//for(var i=0;i<weight.length;i++){
 			//weight[i] = parseFloat(weight[i]);
 		//}
-		console.log(data[1]);
+		console.log(weight_array);
 		
 		alert(this.responseText);
 
