@@ -1,3 +1,4 @@
+<?php
 var ajax =  new XMLHttpRequest();
 	var method = "GET";
 	var url = "userweight.php";
@@ -16,10 +17,12 @@ var ajax =  new XMLHttpRequest();
 
 		for(var i=0;i<weight.length;i++){
 			weight[i] = parseFloat(weight[i]);
+			$dataPoints = weight[i];
 		}
     }
-		
-
+    echo json_encode($dataPoints, JSON_NUMERIC_CHECK);
+?>
+<script>
 		window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
@@ -34,13 +37,13 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{        
 		type: "line",
       	indexLabelFontSize: 16,
-		dataPoints: [weight]
+		dataPoints: <?php echo json_encode($dataPoints, JSON_NUMERIC_CHECK); ?>
 	}]
 });
 chart.render();
 
 }
-
+</script>
 	}
 
 	
