@@ -27,7 +27,7 @@ include('server.php');
 		weight = JSON.parse(this.responseText);	
 
 		//alert(this.responseText);
-		console.log(weight);
+		//console.log(weight);
 		}
 	</script>
 </head>
