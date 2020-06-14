@@ -20,12 +20,12 @@ var ajax =  new XMLHttpRequest();
 		
 		
 
-		//weight =  data[1].split(",");
 
 		//for(var i=0;i<weight.length;i++){
 			//weight[i] = parseFloat(weight[i]);
 		//}
 		console.log(weight_array);
+		console.log(weight_array[0]*2);
 		
 		//alert(Array.isArray(userdata));
 		
