@@ -68,7 +68,7 @@ if (isset($_GET['logout'])) {
 		<a href="index.php?logout='1'" class="logout">Logout</a>
 
 		<div class="buttonLOGIN">
-			<figure class="snip1321"><img src="img/food.jpg" alt="sq-sample26"/>
+			<figure class="snip1321"><img src="img/food.jpeg" alt="sq-sample26"/>
 			  <figcaption><i class="ion-pizza"></i>
 			    <h4>Macronutrients</h4>
 			    <h2>Caloric Intake</h2>
