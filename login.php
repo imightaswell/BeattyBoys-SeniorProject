@@ -35,9 +35,9 @@
 		<div class="loginform">
 			<form action="login.php" method="post">
 
-				<img src="img/logo3.png" class="avatar">
+				<img src="img/Logo4.png" class="avatar">
 				<div class="errors">
-				<?php include('errors.php'); ?>
+                <?php include('errors.php'); ?>
 			    </div>
 
 				<label for="username">Username</label><br>
