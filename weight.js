@@ -39,7 +39,7 @@ var myChart = new Chart(ctx, {
         labels: labels,
         datasets: [{
             label: 'Weight Entries',
-            data: [170,150,120,169,100,192,160],
+            data: weight_array,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
