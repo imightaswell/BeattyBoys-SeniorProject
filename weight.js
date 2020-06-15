@@ -37,29 +37,34 @@ var ajax =  new XMLHttpRequest();
     		type: 'line',
     		data: {
         		labels: labels,
-        		datasets: [{
-            		label: 'Weight Entries',
-            		data: weight_array,
-            		backgroundColor: [
-                		'rgb(0,0,0)'
-            		],
-            		borderColor: [
-                		'rgb(0,0,0)'
-            		],
-            		borderWidth: 1,
-            		lineTension: 0,
-            		fill : false
+        			datasets: [{
+            			label: 'Weight Entries',
+            			data: weight_array,
+            			backgroundColor: ['rgb(0,0,0)'],
+            			borderColor: ['rgb(0,0,0)'],
+            			borderWidth: 1,
+            			lineTension: 0,
+            			fill : false
         		}]
     		},
     		options: {
+    			legend : {onClick: (e) => e.stopPropagation()},
         		scales: {
-            	yAxes: [{
-                ticks: {
-                    beginAtZero: true,
-                    callback: function(value, index, values) {
-                        return 'Entry ' + value;
+            		yAxes: [{
+                		ticks: {
+                    		beginAtZero: true,
+                    			callback: function(value, index, values) {
+                        			return value + "lbs";
                     }
                 }
+            }],
+
+            xAxes: [{
+            	ticks : {
+            		callback: function(value, index, values){
+            			return 'Entry ' + value;
+            		}
+            	}
             }]
         }
     }
