@@ -39,6 +39,7 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: '# of Votes',
             data: weight_array,
+            lineTension: 0,
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
@@ -50,9 +51,8 @@ var myChart = new Chart(ctx, {
             borderWidth: 1,
             fill : false,
         }]
-    },
+    }, 
     options: {
-    	bezierCurve: false,
         scales: {
             yAxes: [{
                 ticks: {
