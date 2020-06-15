@@ -49,10 +49,10 @@ var myChart = new Chart(ctx, {
             ],
             borderWidth: 1,
             fill : false,
-            bezierCurve: false,
         }]
     },
     options: {
+    	bezierCurve: false,
         scales: {
             yAxes: [{
                 ticks: {
