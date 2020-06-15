@@ -69,7 +69,7 @@ if (isset($_GET['logout'])) {
 			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/food.jpeg" alt="food"/>
 			  <figcaption><ion-icon name="restaurant-sharp"></ion-icon>
 			    <h4>Caloric Intake</h4>
-			    <h2>Calorie and Macronutrient calculator</h2>
+			    <h2>Calorie and Macronutrient Calculator</h2>
 			  </figcaption><a href="calories.php"></a>
 			</figure>
 
