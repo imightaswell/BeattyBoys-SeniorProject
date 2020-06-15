@@ -36,7 +36,7 @@ var myChart = new Chart(ctx, {
     type: 'line',
     data: [{
     	label: labels,
-    	datasets : weight_array
+    	datasets : weight_array,
     	backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -53,7 +53,7 @@ var myChart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
       	],
-    }] 
+    }], 
     options: {
         scales: {
             yAxes: [{
