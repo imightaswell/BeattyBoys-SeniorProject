@@ -48,7 +48,8 @@ var myChart = new Chart(ctx, {
                 'rgba(255, 159, 64, 1)'
             ],
             borderWidth: 1,
-            fill : false
+            fill : false,
+            bezierCurve: false,
         }]
     },
     options: {
