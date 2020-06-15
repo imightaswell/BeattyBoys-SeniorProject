@@ -24,8 +24,9 @@ var ajax =  new XMLHttpRequest();
 
 		var labels = [];
 		
+		var array_length = weight_array.length+1;
 
-		for (var i=1;i<weight_array.length;i++){
+		for (var i=1;i<array_length;i++){
 			labels.push(i);
 		}
 		//alert(typeof weight_array[0]);
