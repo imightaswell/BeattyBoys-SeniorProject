@@ -22,7 +22,12 @@ var ajax =  new XMLHttpRequest();
 			weight_array[i] = parseFloat(weight_array[i]);
 		}
 
+		var labels = [];
+		
 
+		for (var i=1;i<weight_array.length;i++){
+			labels.push(i);
+		}
 		//alert(typeof weight_array[0]);
 
 
@@ -30,10 +35,11 @@ var ajax =  new XMLHttpRequest();
 var myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: [],
+        labels: labels,
         datasets: [{
             label: '# of Votes',
             data: weight_array,
+            lineTension: 0,
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
@@ -42,9 +48,10 @@ var myChart = new Chart(ctx, {
                 'rgba(153, 102, 255, 1)',
                 'rgba(255, 159, 64, 1)'
             ],
-            borderWidth: 1
+            borderWidth: 1,
+            fill : false,
         }]
-    },
+    }, 
     options: {
         scales: {
             yAxes: [{
