@@ -34,7 +34,9 @@ var ajax =  new XMLHttpRequest();
 		var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'line',
-    data: weight_array, 
+    data: [{
+    	data : weight_array
+    }] 
     options: {
         scales: {
             yAxes: [{
