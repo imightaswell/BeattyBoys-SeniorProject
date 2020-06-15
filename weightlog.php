@@ -5,6 +5,11 @@
 	<title>BeattyBoys Fitness - Weight Log</title>
 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+	</script>
 
 	<script src="weight.js"></script>
 
