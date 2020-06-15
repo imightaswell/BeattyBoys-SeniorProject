@@ -33,27 +33,27 @@ var ajax =  new XMLHttpRequest();
 
 
 		var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: labels,
-        datasets: [{
-            label: 'Weight Entries',
-            data: weight_array,
-            backgroundColor: [
-                'rgb(0,0,0)'
-            ],
-            borderColor: [
-                'rgb(0,0,0)'
-            ],
-            borderWidth: 1,
-            lineTension: 0,
-            fill : false
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
+		var myChart = new Chart(ctx, {
+    		type: 'line',
+    		data: {
+        		labels: labels,
+        		datasets: [{
+            		label: 'Weight Entries',
+            		data: weight_array,
+            		backgroundColor: [
+                		'rgb(0,0,0)'
+            		],
+            		borderColor: [
+                		'rgb(0,0,0)'
+            		],
+            		borderWidth: 1,
+            		lineTension: 0,
+            		fill : false
+        		}]
+    		},
+    		options: {
+        		scales: {
+            	yAxes: [{
                 ticks: {
                     beginAtZero: true,
                     callback: function(value, index, values) {
