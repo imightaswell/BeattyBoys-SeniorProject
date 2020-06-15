@@ -73,7 +73,7 @@ if (isset($_GET['logout'])) {
 			  </figcaption><a href="calories.php"></a>
 			</figure>
 
-			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
+			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog2.jpg" alt="weight log"/>
 			  <figcaption><ion-icon name="trending-up-sharp"></ion-icon>
 			    <h4>Stuff</h4>
 			    <h2>Weight Log</h2>
