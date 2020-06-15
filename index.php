@@ -16,7 +16,6 @@ if (isset($_GET['logout'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1">
 	<title>Beatty Boyz Fitness</title>
-    <iframe width="0" height="0" src="https://www.youtuberepeater.com/watch?v=FR7kq654SPM#gsc.tab=0" frameborder="0" allowfullscreen></iframe>
 	<link rel="stylesheet" href="css/css_index.css"/>
 </head>  
 
