@@ -1,0 +1,244 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fix{
+  clear: both;
+  overflow: hidden;
+}
+
+/* Height used to be 100% */
+.vid-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 90%;
+}
+
+.grayfilter{
+  background: rgba(0,0,0,0.4);
+  height: 937px;
+  position: fixed;
+  width: 100%;
+}
+
+.logo{
+  margin: 0 50px;
+  height: 60px;
+  float: left;
+  color: #fff;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+}
+
+/* Home and About Us Navi Bar */
+ul{
+  font-family: "Lucida Sans", Verdana, Arial, white;
+  font-size: 1.3em;
+   font-weight: bold;
+   position: fixed;
+   top: -1.7%;
+   left: 45%;
+   margin-top: 30px;
+
+}
+
+ul li{
+   display: inline-block;
+}
+
+ul li a{
+   text-decoration: none;
+   color: #fff;
+   transition: 0.6s ease;
+}
+
+ul li a:hover{
+  text-decoration: none;
+   color: #808080;
+}
+
+.loginform{
+    width: 1020px;
+    height: 580px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginform label, .loginform p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+/** Login Button Placement */
+
+.loginform button, .loginform input{
+    width: 40%;
+    margin-bottom: 45px;
+}
+
+.loginform button{
+    position: fixed;
+    bottom: -3%;
+    left: 28%;
+}
+
+/** Login Entries CSS **/
+
+.loginform input[name="username"], .loginform input[name="password"], .loginform input[name="age"],
+.loginform input[name="height"], .loginform input[name="weight"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    width: 45%;
+    
+}
+
+.loginform button[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #800000;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginform button[type="submit"]:hover
+{
+    cursor: pointer;
+     background-color: #fff;
+   color: #000;
+   transition: 0.6s ease;
+}
+.loginform a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginform a:hover
+{
+    color: #ffc107;
+}
+
+.blackbar{
+  background: rgb(20, 20, 24);
+  height: 55px;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+.logo img{
+   width: 2.2em;
+   height: auto;
+   position: fixed;
+   top: -4.2%;
+   left: 2%;
+   transition: all 0.5s;
+   cursor: pointer;
+   padding-top: 36px;
+}
+
+/* LoginForm Part 2 (Weight, Gender, etc) Placement */
+
+.loginform input[name="weight"] {
+    position:fixed;
+    left: 52%;
+    top: 15%;
+}
+
+.loginform label[for="weight"]{
+    position:fixed;
+    left: 52%;
+    top: 13.4%;
+    
+}
+
+.loginform select[name="gender"]{
+    position: fixed;
+    left: 52%;
+    top: 33.9%;
+}
+
+.loginform select[name="activity"]{
+    position:fixed;
+    left: 52%;
+    top: 50.4%;
+}
+
+.loginform select[name="fitness_goal"]{
+    position:fixed;
+    left: 52%;
+    bottom: 29.2%;
+}
+
+/* Select Dropdown CSS */
+
+option{
+    background-color: #000;
+}
+.dds select{
+    width: 45.4%;
+    border: 0;
+    background: transparent;
+    color: white;
+    outline: none;
+    appearance: none;
+     text-align: center;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    
+    
+}
+
+.dds:after {
+    font-size: 24px;
+    color: transparent;
+    position: absolute;
+    right: 10px;
+    
+}
+
+/* Error Placement */
+.errors{
+  position: fixed;
+  top: 10%
+}
