@@ -57,7 +57,7 @@ var myChart = new Chart(ctx, {
                 'rgba(255, 159, 64, 1)'
             ],
             lineTension: 0,
-            
+            fill : false
         }]
     },
     options: {
