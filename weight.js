@@ -25,7 +25,7 @@ var ajax =  new XMLHttpRequest();
 		var labels = [];
 		
 
-		for (var i=1;i<weight_array.length;i++){
+		for (var i=1;i=weight_array.length;i++){
 			labels.push(i);
 		}
 		//alert(typeof weight_array[0]);
@@ -39,7 +39,7 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: '# of Votes',
             data: weight_array,
-            lineTension: 0,
+            
             borderColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
