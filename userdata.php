@@ -14,7 +14,7 @@ $weight_array = array();
 
 $weight_string = $result['weight'];
 
-$weight_array = explode(",", $weight_string);
+$weight_array = explode(".", $weight_string);
 
 $relevant_weight = sizeof($weight_array)-1;
 
