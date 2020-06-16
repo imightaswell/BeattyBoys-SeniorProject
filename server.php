@@ -51,6 +51,7 @@ if(isset($_POST['signup'])){
 		$_SESSION['username'] = $username;
 		$_SESSION['password'] = $password;
 		$_SESSION['success'] = "You have logged in";
+		$_SESSION['fitness_goal'] = $fitness_goal;
 
 		header('location: index.php');
 	}
@@ -78,7 +79,6 @@ if (isset($_POST['signin'])) {
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You have logged in";
 			$_SESSION['password'] = $password;
-			$_SESSION['fitness_goal'] = $fitness_goal;
 			header('location: index.php');
 
 		}
