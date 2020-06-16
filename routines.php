@@ -36,7 +36,7 @@ table, th, td {
 			<td>Rest</td>
 		</tr>
 		<tr>
-			<td><Pull Ups</td>
+			<td>Pull Ups</td>
 			<td>Deadlift</td>
 			<td>Rest</td>
 			<td>Pull Ups</td>
