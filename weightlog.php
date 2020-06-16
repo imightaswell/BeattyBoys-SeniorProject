@@ -5,6 +5,7 @@
 	<title>BeattyBoys Fitness - Weight Log</title>
 
 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	
 	<script>
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );
@@ -16,9 +17,6 @@
 
 </head>
 <body>
-
-<!--<div id="chartContainer" style="height: 370px; width: 100%;"></div>-->
-
 
 <canvas id="myChart" width="50" height="50"></canvas>
 

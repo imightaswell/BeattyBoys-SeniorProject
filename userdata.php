@@ -22,10 +22,11 @@ $weight = $weight_array[$relevant_weight];
 $height = $result['height'];
 $gender = $result['gender'];
 $activity = $result['activity_level'];
+$goal = $result['fitness_goal'];
 
 $userdata = array();
 
-array_push($userdata, $age, $weight, $height, $gender, $activity);
+array_push($userdata, $age, $weight, $height, $gender, $activity, $goal);
 
 echo json_encode($userdata);
 
