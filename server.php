@@ -2,7 +2,7 @@
 
 session_start();
 
-$username= '';
+$username= ''; 
 $password= '';
 $age= '';
 $height= '';
@@ -39,6 +39,7 @@ if(isset($_POST['signup'])){
 	if (empty($age)) { array_push($errors, "Please enter age");}
 	if (empty($height)) { array_push($errors, "Please enter height");}
 	if (empty($weight)) { array_push($errors, "Please enter weight");}
+	if (empty($activity)) { array_push($errors, "Please select an activity level");}
 	
 
 	if (count($errors) == 0){
@@ -76,9 +77,14 @@ if (isset($_POST['signin'])) {
 		$result = mysqli_query($conn, $query);
 
 		if(mysqli_num_rows($result)==1){
+			$query_two = mysqli_query($conn,"SELECT * FROM user WHERE username = '$username'");
+			$result_two = mysqli_fetch_assoc($query_two);
+
+			$fitness_goal = $result_two['fitness_goal'];
+
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You have logged in";
-			$_SESSION['password'] = $password;
+			$_SESSION['fitness_goal'] = $fitness_goal;
 			header('location: index.php');
 
 		}

@@ -69,7 +69,7 @@ var ajax =  new XMLHttpRequest();
 	ajax.send();
 
 	ajax.onreadystatechange = function(){
-		if (this.readyState == 4 && this.status == 200){
+
 			var data = JSON.parse(this.responseText);
 			
 			var age = data[0];
@@ -109,7 +109,7 @@ var ajax =  new XMLHttpRequest();
 			document.getElementById('bulkingProtein').innerHTML = bulkingArray[0];
 			document.getElementById('bulkingFats').innerHTML = bulkingArray[1];
 			document.getElementById('bulkingCarbs').innerHTML = bulkingArray[2];
-		}
+
 	}
 
 		

@@ -16,8 +16,6 @@ var ajax =  new XMLHttpRequest();
 		weight = weight.substring(1, weight.length-1);
 		var weight_array = weight.split(".");
 
-		console.log(weight_array);
-
 		for (var i=0; i<weight_array.length;i++){
 			weight_array[i] = parseFloat(weight_array[i]);
 		}
@@ -29,8 +27,6 @@ var ajax =  new XMLHttpRequest();
 		for (var i=1;i<array_length;i++){
 			labels.push(i);
 		}
-		//alert(typeof weight_array[0]);
-
 
 		var ctx = document.getElementById('myChart').getContext('2d');
 		var myChart = new Chart(ctx, {
@@ -53,6 +49,7 @@ var ajax =  new XMLHttpRequest();
             		yAxes: [{
                 		ticks: {
                     		beginAtZero: true,
+                            fontSize: 20,
                     			callback: function(value, index, values) {
                         			return value + "lbs";
                     }
@@ -61,6 +58,7 @@ var ajax =  new XMLHttpRequest();
 
             xAxes: [{
             	ticks : {
+                    fontSize: 20,
             		callback: function(value, index, values){
             			return 'Entry ' + value;
             		}
