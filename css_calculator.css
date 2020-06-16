@@ -1,0 +1,91 @@
+/* general text formatting */
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+h1{
+    color: white;
+    position: fixed;
+    top: 25%;
+    left: 17%;
+}
+
+
+body {
+   font-family: "Lucida Sans", Verdana, Arial, white;
+   font-size: 85%;
+   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/calbg.jpeg);
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+}
+
+
+.paragraph {
+   color: white;
+   font-style: oblique;
+   width:80%;
+   display: inline-block;
+    position: fixed;
+    top: 35%;
+    left: 12%;
+}
+
+.content-table {
+  position: fixed;
+  right: 14%;
+  bottom: 32%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+}
+
+.content-table thead tr {
+  background-color: #C70039;
+  color: #ffffff;
+  text-align: left;
+}
+
+.content-table {
+
+  font-size: 0.8em;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #C70039;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 37px solid #C70039;
+}
+
+#accordion{
+  margin-top: 215px;
+  padding-left: 120px;
+  position: relative;
+}
