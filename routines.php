@@ -8,5 +8,9 @@
 	<?php if (isset($_SESSION['username'])) : ?>
 		<p>Hello <?php echo $_SESSION['username']; ?></p>
 		<p>Your fitness goal is<?php echo $_SESSION['fitness_goal']; ?></p>
+	<?php endif ?>
+	<?php if (!isset($_SESSION['username'])) : ?>
+		<p>Error</p>
+	<?php endif ?>
 </body>
 </html>
