@@ -10,6 +10,11 @@
 </head>
 <body>
     
+    <header class="fix">
+    <video src="img/caloricbg1.mp4" class="vid-bg" autoplay loop muted></video>
+         <!-- Filter Background -->
+    <div class="grayfilter">
+    
     <h1>Weight Change and How it Works</h1>
 	
     <p class="paragraph">
@@ -25,6 +30,22 @@
 
 			-  Emmanuel Valenzuela <br> Proud CEO of BeattyBoyz Fitness <br/>
 		</p>
+        
+    <!-- Navi Bar -->
+		<div class ="blackbar">
+		</div>
+		<div class="main">
+			<div class="logo">
+				<a href="index.php">
+				<img src="img/logo2.png"></img>
+				</a>
+			</div>
+			<ul>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</div>
+	</div>
+    
 
 	<table class="content-table">
         <thead>
@@ -81,5 +102,6 @@
 		</tr>
 	</tbody>
 	</table>
+</header>
 </body>
 </html>
