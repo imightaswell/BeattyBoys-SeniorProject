@@ -19,7 +19,7 @@ table, th, td {
 	<div class="button1" >
 		<div class="card"> <!-- Panel (collapasable) -->
     		<div class="card-header" id="headingOne" > <!-- Panel head -->
-       			 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" ariacontrols="collapseOne">
+       			 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" ariacontrols="collapseOne">
           			  3-Day Split
         		</button>           
     		</div> <!-- END Panel head -->
