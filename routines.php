@@ -3,6 +3,8 @@
 <html>
 <head>
 	<title>BeattyBoys Fitness - Workout Routines</title>
+	<link rel="stylesheet" href="../css/css_routine.css"/>>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<style>
 table, th, td {
   border: 1px solid black;
@@ -13,7 +15,18 @@ table, th, td {
 </head>
 <body>
 	<?php if ($_SESSION['fitness_goal'] === 'Hypertrophy') :?>
-		<table>
+<div class="container" id="accordion">
+	<div class="button1" >
+		<div class="card"> <!-- Panel (collapasable) -->
+    		<div class="card-header" id="headingOne" > <!-- Panel head -->
+       			 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" ariacontrols="collapseOne">
+          			  3-Day Split
+        		</button>           
+    		</div> <!-- END Panel head -->
+   			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion"> <!-- Collapsable section -->
+        		<div class="card-body "> <!-- Panel body -->     
+
+    		<table class="content-table" >
 			<thead>
 			<tr>
 				<th>Monday</th>
@@ -57,10 +70,10 @@ table, th, td {
 
 		<tr>
 			<td>Cable Rows</td>		
-			<td>Seated Leg Curls</a></td>
+			<td>Seated Leg Curls</td>
 			<td>Rest</td>
 			<td>Cable Rows</td>
-			<td>Seated Leg Curls</a></td>
+			<td>Seated Leg Curls</td>
 			<td>Rest</td>
 			<td>Rest</td>
 		</tr>
@@ -97,6 +110,11 @@ table, th, td {
 		</tbody>
 		
 		</table>
+	</div>
+	</div>
+	</div>
+	</div>
+</div>
 	<?php endif ?>
 
 	<?php if ($_SESSION['fitness_goal'] === 'Strength') :?>
@@ -216,5 +234,9 @@ table, th, td {
 	<?php if ($_SESSION['fitness_goal'] === 'Cardiovascular Health') :?>
 		
 	<?php endif ?>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
