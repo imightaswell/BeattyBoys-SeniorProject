@@ -23,7 +23,7 @@ table, th, td {
           			  3-Day Split
         		</button>           
     		</div> <!-- END Panel head -->
-   			<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion"> <!-- Collapsable section -->
+   			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"> <!-- Collapsable section -->
         		<div class="card-body "> <!-- Panel body -->     
 
     		<table class="content-table" >
