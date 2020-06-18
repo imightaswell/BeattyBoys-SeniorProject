@@ -19,19 +19,18 @@ include('server.php');?>
 
 </head>
 <body>
+	<div class="container">
 
-<canvas id="myChart" width="100" height="100"></canvas>
+		<canvas id="myChart" width="100" height="100"></canvas>
 
+		<form method="post" action="weightlog.php">
+			<label for="weight">Enter new weight:</label><br />
+			<input name="weight" type="number" /><br />
 
-<form method="post" action="weightlog.php">
+			<button type="submit" name="weightChange">Submit</button>
+		</form>
 
-	<label for="weight">Enter new weight:</label><br />
-	<input name="weight" type="number" /><br />
-
-	<button type="submit" name="weightChange">Submit</button>
-</form>
-
-
+	</div>
 
 </body>
 </html>
