@@ -44,7 +44,6 @@ var ajax =  new XMLHttpRequest();
         		}]
     		},
     		options: {
-                maintainAspectRatio : true,
     			legend : {display: false},
                 maintainAspectRatio : false,
         		scales: {
@@ -60,7 +59,7 @@ var ajax =  new XMLHttpRequest();
 
             xAxes: [{
             	ticks : {
-                    fontSize: 20,
+                    fontSize: 15,
             		callback: function(value, index, values){
             			return 'Entry ' + value;
             		}

@@ -1,5 +1,21 @@
+.container {
+	position: absolute;
+	width: 98%;
+}
+
 canvas {
 	width: 1300px !important; 
-	height: 900px !important;
+	height: 700px !important;
+	position: relative;
+	float: right;
+}
+
+.form-box{
+	position: absolute;
+	width: 200px:;
+	left:10%;
+	top:30%;
+}
+#weight{
 	position: relative;
 }
