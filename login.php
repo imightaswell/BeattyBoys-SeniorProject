@@ -40,10 +40,10 @@
                 <?php include('errors.php'); ?>
 			    </div>
 
-				<label for="username">Username</label><br>
-				<input type="text" name="username"><br>
-				<label for="password">Password</label><br>
-				<input type="password" name="password"><br>
+				<label for="username"></label><br>
+				<input type="text" name="username" placeholder="Username"><br>
+				<label for="password"></label><br>
+				<input type="password" name="password" placeholder="Password"><br>
 				<button type="submit" name="signin" value="login">Login</button> 
 				<p>New user? <a href="register.php">Register here</a>.</p>
 			</form>
