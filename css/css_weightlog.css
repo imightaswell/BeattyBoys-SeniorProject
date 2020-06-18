@@ -6,6 +6,7 @@
 canvas {
 	width: 1300px !important; 
 	height: 700px !important;
+	top:10%;
 	position: relative;
 	float: right;
 }
@@ -14,7 +15,7 @@ canvas {
 	position: absolute;
 	width: 200px:;
 	left:10%;
-	top:30%;
+	top:35%;
 }
 #weight{
 	position: relative;
