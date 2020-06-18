@@ -20,9 +20,8 @@ include('server.php');?>
 </head>
 <body>
 	<video src="img/routines.mp4" class="vid-bg" autoplay loop muted></video>
-	
 	<div class="container">
-
+		    
 		     <!-- Filter Background -->
 		    <div class="grayfilter"> 
 		    

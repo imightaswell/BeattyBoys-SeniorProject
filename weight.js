@@ -36,7 +36,6 @@ var ajax =  new XMLHttpRequest();
         			datasets: [{
             			label: 'Weight Entries',
             			data: weight_array,
-            			backgroundColor: ['rgb(0,0,0)'],
             			borderColor: ['rgb(0,0,0)'],
             			borderWidth: 1,
             			lineTension: 0,
