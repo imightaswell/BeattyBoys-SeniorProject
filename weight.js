@@ -50,7 +50,7 @@ var ajax =  new XMLHttpRequest();
             		yAxes: [{
                 		ticks: {
                     		beginAtZero: true,
-                            fontSize: 20,
+                            fontSize: 15,
                     			callback: function(value, index, values) {
                         			return value + "lbs";
                     }
