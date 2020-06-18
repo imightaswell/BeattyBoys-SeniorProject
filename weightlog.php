@@ -38,9 +38,9 @@ include('server.php');?>
 					</ul>
 			   </div>
 		    </div>
-	<div style="background-image: url('https://imgur.com/j44pcJv');">
-		<canvas id="myChart" width="100" height="100"></canvas>
-
+		<div style="background-image: url('https://imgur.com/j44pcJv');">
+			<canvas id="myChart" width="100" height="100"></canvas>
+		</div>
 		<div class= "form-box">
 			<form id="weight" method="post" action="weightlog.php">
 				<label for="weight">Enter new weight:</label><br />
