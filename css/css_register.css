@@ -239,6 +239,6 @@ option{
 
 /* Error Placement */
 .errors{
-  position: relative;
+  position: absolute;
   top: 70%
 }
