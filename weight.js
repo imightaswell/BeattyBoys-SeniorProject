@@ -46,11 +46,13 @@ var ajax =  new XMLHttpRequest();
     		options: {
                 maintainAspectRatio : true,
     			legend : {display: false},
+                maintainAspectRatio : false,
+    			legend : {onClick: (e) => e.stopPropagation()},
         		scales: {
             		yAxes: [{
                 		ticks: {
                     		beginAtZero: true,
-                            fontSize: 20,
+                            fontSize: 15,
                     			callback: function(value, index, values) {
                         			return value + "lbs";
                     }
