@@ -40,6 +40,9 @@ if(isset($_POST['signup'])){
 	if (empty($height)) { array_push($errors, "Please enter height");}
 	if (empty($weight)) { array_push($errors, "Please enter weight");}
 	if (empty($activity)) { array_push($errors, "Please select an activity level");}
+	if (empty($gender)) { array_push($errors, "Please choose a gender");}
+	if (empty($activity)) { array_push($errors, "Please choose an activity level");}
+	if (empty($fitness_goal)) { array_push($errors, "Please choose a fitness goal");}
 	
 
 	if (count($errors) == 0){

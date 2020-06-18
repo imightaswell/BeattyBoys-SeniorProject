@@ -232,10 +232,76 @@ table, th, td {
 	<?php endif ?>
 
 	<?php if ($_SESSION['fitness_goal'] === 'Cardiovascular Health') :?>
-		
+		<table>
+			<tr>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+				<th>Sunday</th>
+			</tr>
+
+			<tr>
+				<td>45-60 Minute Jog</td>
+				<td>60-90 Minute Bicycling</td>
+				<td>45-60 Minute Jog</td>
+				<td>60-90 Minute Bicycling</td>
+				<td>45-60 Minute Jog</td>
+				<td>Rest</td>
+				<td>Rest</td>
+			</tr>
+			<tr>
+				<td>Dumbbell Bench Press</td>
+				<td>20-25 Minute Stairmaster</td>
+				<td>Dumbbell Bench Press</td>
+				<td>20-25 Minute Stairmaster</td>
+				<td>Dumbbell Bench Press</td>
+				<td>Rest</td>
+				<td>Rest</td>
+			</tr>
+			<tr>
+				<td>Pull-Ups</td>
+				<td>Rest</td>
+				<td>Pull-Ups</td>
+				<td>Rest</td>
+				<td>Pull-Ups</td>
+				<td>Rest</td>
+				<td>Rest</td>
+			</tr>
+			<tr>
+				<td>Overhead Press</td>
+				<td>Rest</td>
+				<td>Overhead Press</td>
+				<td>Rest</td>
+				<td>Overhead Press</td>
+				<td>Rest</td>
+				<td>Rest</td>
+			</tr>
+			<tr>
+				<td>Squat</td>
+				<td>Rest</td>
+				<td>Squat</td>
+				<td>Rest</td>
+				<td>Squat</td>
+				<td>Rest</td>
+				<td>Rest</td>
+			</tr>
+			<tr>
+				<td>Deadlift</td>
+				<td>Rest</td>
+				<td>Deadlift</td>
+				<td>Rest</td>
+				<td>Deadlift</td>>
+				<td>Rest</td>
+				<td>Rest</td>
+			</tr>
+			
+		</table>
 	<?php endif ?>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
