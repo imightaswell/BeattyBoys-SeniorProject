@@ -10,10 +10,10 @@
 canvas {
 	width: 1300px !important; 
 	height: 700px !important;
-	top:30%;
+	margin-top:15%;
 	float: right;
 	position: relative;
-	background-image: url("img/559.jpeg");
+	background-image: url(https://imgur.com/j44pcJv);
 }
 
 /** form box CSS **/
