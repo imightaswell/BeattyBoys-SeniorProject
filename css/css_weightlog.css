@@ -9,3 +9,13 @@ canvas {
 	position: relative;
 	float: right;
 }
+
+.form-box{
+	position: absolute;
+	width: 200px:;
+	left:10%;
+	top:50%;
+}
+#weight{
+	position: relative;
+}

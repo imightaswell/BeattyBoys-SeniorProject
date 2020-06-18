@@ -23,13 +23,14 @@ include('server.php');?>
 
 		<canvas id="myChart" width="100" height="100"></canvas>
 
-		<form method="post" action="weightlog.php">
-			<label for="weight">Enter new weight:</label><br />
-			<input name="weight" type="number" /><br />
+		<div class= "form-box">
+			<form id="weight" method="post" action="weightlog.php">
+				<label for="weight">Enter new weight:</label><br />
+				<input name="weight" type="number" /><br/>
 
-			<button type="submit" name="weightChange">Submit</button>
-		</form>
-
+				<button type="submit" name="weightChange">Submit</button>
+			</form>
+		</div>
 	</div>
 
 </body>
