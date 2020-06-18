@@ -1,6 +1,6 @@
 .container {
 	position: absolute;
-	width: 98%;
+	width: 100%;
 }
 
 
@@ -10,10 +10,10 @@
 canvas {
 	width: 1300px !important; 
 	height: 700px !important;
-	top:10%;
+	top:25%;
+	right:0%;
 	position: relative;
-	float: right;
-	background-image: url(599.jpeg);
+	background-image: url(img/599.jpeg);
 }
 
 /** form box CSS **/
