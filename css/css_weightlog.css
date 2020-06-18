@@ -1,6 +1,8 @@
 .container {
 	position: absolute;
+	max-height: 800px;
 	width: 98%;
+	top: 5%;
 }
 
 
@@ -80,14 +82,12 @@ canvas {
 
 }
 
-/* Home and About Us Navi Bar */
 ul{
-  font-family: "Lucida Sans", Verdana, Arial, white;
   font-size: 1.3em;
    font-weight: bold;
    position: fixed;
-   top: 1%;
-   left: 47%;
+   top: -1.7%;
+   left: 44.9%;
    margin-top: 30px;
 
 }
@@ -106,15 +106,3 @@ ul li a:hover{
   text-decoration: none;
    color: #808080;
 }
-
-.logout{
-  color: white;
-  font-size: 1.3em;
-   font-weight: bold;
-   position: fixed;
-   top: -1.7%;
-   right: 4%;
-   margin-top: 30px;
-   text-decoration: none;
-}
-
