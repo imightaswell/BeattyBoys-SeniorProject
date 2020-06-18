@@ -3,6 +3,10 @@
 	width: 98%;
 }
 
+
+
+/** Chart CSS **/
+
 canvas {
 	width: 1300px !important; 
 	height: 700px !important;
@@ -11,12 +15,65 @@ canvas {
 	float: right;
 }
 
+/** form box CSS **/
+
 .form-box{
 	position: absolute;
 	width: 200px:;
 	left:10%;
 	top:35%;
+	border: 1px solid #fff;
+   padding: 10px 30px;
+   color: #fff;
+   text-decoration: none;
 }
 #weight{
 	position: relative;
+}
+
+/** Nav bar CSS **/
+.blackbar{
+  background: rgb(20, 20, 24);
+  height: 55px;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+.logo img{
+   width: 2.2em;
+   height: auto;
+   position: fixed;
+   top: -4.2%;
+   left: 2%;
+   transition: all 0.5s;
+   cursor: pointer;
+   padding-top: 36px;
+}
+
+.vid-bg{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+.grayfilter{
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  top:  -1%;
+}
+
+.logo{
+  margin: 0 50px;
+  height: 60px;
+  float: left;
+  color: #fff;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 2px;
+
 }

@@ -19,6 +19,27 @@ include('server.php');?>
 
 </head>
 <body>
+
+<video src="img/routines.mp4" class="vid-bg" autoplay loop muted></video>
+    
+     <!-- Filter Background -->
+    <div class="grayfilter"> 
+    
+    <!-- Navi Bar -->
+		<div class ="blackbar"></div>
+		<div class="main">
+			<div class="logo">
+				<a href="index.php">
+				<img src="img/logo2.png"></img>
+				</a>
+			</div>
+			<ul>
+				<li><a href="#">About Us</a></li>
+			</ul>
+	   </div>
+    </div>
+
+
 	<div class="container">
 
 		<canvas id="myChart" width="100" height="100"></canvas>
