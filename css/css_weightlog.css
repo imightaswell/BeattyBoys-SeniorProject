@@ -1,6 +1,6 @@
 .container {
 	position: absolute;
-	width: 100%;
+	width: 98%;
 }
 
 
@@ -79,3 +79,42 @@ canvas {
   letter-spacing: 2px;
 
 }
+
+/* Home and About Us Navi Bar */
+ul{
+  font-family: "Lucida Sans", Verdana, Arial, white;
+  font-size: 1.3em;
+   font-weight: bold;
+   position: fixed;
+   top: 1%;
+   left: 47%;
+   margin-top: 30px;
+
+}
+
+ul li{
+   display: inline-block;
+}
+
+ul li a{
+   text-decoration: none;
+   color: #fff;
+   transition: 0.6s ease;
+}
+
+ul li a:hover{
+  text-decoration: none;
+   color: #808080;
+}
+
+.logout{
+  color: white;
+  font-size: 1.3em;
+   font-weight: bold;
+   position: fixed;
+   top: -1.7%;
+   right: 4%;
+   margin-top: 30px;
+   text-decoration: none;
+}
+
