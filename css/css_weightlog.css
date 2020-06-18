@@ -13,6 +13,7 @@ canvas {
 	top:10%;
 	position: relative;
 	float: right;
+	background-image: url(599.jpeg);
 }
 
 /** form box CSS **/
@@ -35,7 +36,7 @@ canvas {
 .blackbar{
   background: rgb(20, 20, 24);
   height: 55px;
-  position: fixed;
+  position: relative;
   top: 0%;
   width: 100%;
 }
