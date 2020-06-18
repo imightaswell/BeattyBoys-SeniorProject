@@ -1,4 +1,5 @@
 .container {
+	position: absolute;
 	width: 100%;
 }
 
@@ -6,4 +7,5 @@ canvas {
 	width: 1300px !important; 
 	height: 900px !important;
 	position: relative;
+	float: right;
 }
