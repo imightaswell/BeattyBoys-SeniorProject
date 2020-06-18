@@ -210,8 +210,9 @@ ul{
   font-size: 1.3em;
    font-weight: bold;
    position: fixed;
+   top: 1%;
    left: 47%;
-
+   margin-top: 30px;
 
 }
 
