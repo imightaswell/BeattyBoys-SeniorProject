@@ -12,6 +12,7 @@
     
     <header class="fix">
     <video src="img/caloricbg1.mp4" class="vid-bg" autoplay loop muted></video>
+        
          <!-- Filter Background -->
     <div class="grayfilter">
     
@@ -32,8 +33,7 @@
 		</p>
         
     <!-- Navi Bar -->
-		<div class ="blackbar">
-		</div>
+		<div class ="blackbar"></div>
 		<div class="main">
 			<div class="logo">
 				<a href="index.php">
