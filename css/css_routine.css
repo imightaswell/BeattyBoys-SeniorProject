@@ -51,6 +51,8 @@ h1{
     left: 7%;
 }
 
+/** Content-table 1**/
+
 .content-table {
   position: fixed;
   right: 9%;
@@ -90,6 +92,95 @@ h1{
 }
 
 .content-table tbody tr:last-of-type {
+  border-bottom: 21px solid #800000;
+
+}
+
+/** Content Table 2 **/
+.content-table2 {
+  position: fixed;
+  right: 9%;
+  bottom: 16%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9 em;
+  min-width: 400px;
+}
+
+.content-table2 thead tr {
+  text-decoration: underline;
+  background-color: #800000;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table2  p{
+    text-align: center;
+}
+
+.content-table2 th, .content-table2 td {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+
+.content-table2 tbody tr:nth-of-type(even) {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f3f3f3;
+}
+
+.content-table2 tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.content-table2 tbody tr:last-of-type {
+  border-bottom: 21px solid #800000;
+
+}
+
+/** Content table 3 **/
+
+.content-table3 {
+  position: fixed;
+  left: 14%;
+  bottom: 26%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9 em;
+  min-width: 400px;
+}
+
+.content-table3 thead tr {
+  text-decoration: underline;
+  background-color: #800000;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table3  p{
+    text-align: center;
+}
+
+.content-table3 th, .content-table3 td {
+  text-align: center;
+  padding: 10px 15px;
+}
+
+
+.content-table3 tbody tr:nth-of-type(even) {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f3f3f3;
+}
+
+.content-table3 tbody tr:nth-of-type(odd) {
+  background-color: #ffffff;
+}
+
+.content-table3 tbody tr:last-of-type {
   border-bottom: 21px solid #800000;
 
 }
