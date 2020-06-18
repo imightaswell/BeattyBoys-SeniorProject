@@ -71,7 +71,12 @@ h1{
   font-weight: bold;
 }
 
+.content-table  p{
+    text-align: center;
+}
+
 .content-table th, .content-table td {
+  text-align: center;
   padding: 20px 35px;
 }
 
