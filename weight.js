@@ -44,7 +44,7 @@ var ajax =  new XMLHttpRequest();
         		}]
     		},
     		options: {
-                maintainAspectRatio : true,
+                maintainAspectRatio : false,
     			legend : {onClick: (e) => e.stopPropagation()},
         		scales: {
             		yAxes: [{
