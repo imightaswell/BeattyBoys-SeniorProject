@@ -21,7 +21,7 @@ include('server.php');?>
 <body>
 	<video src="img/routines.mp4" class="vid-bg" autoplay loop muted></video>
 	<div class="container">
-		    
+
 		     <!-- Filter Background -->
 		    <div class="grayfilter"> 
 		    
@@ -38,7 +38,7 @@ include('server.php');?>
 					</ul>
 			   </div>
 		    </div>
-
+	<div style="background-image: url('https://imgur.com/j44pcJv');">
 		<canvas id="myChart" width="100" height="100"></canvas>
 
 		<div class= "form-box">
