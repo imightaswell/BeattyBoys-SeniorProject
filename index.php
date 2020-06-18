@@ -41,8 +41,8 @@ if (isset($_GET['logout'])) {
 	<div class ="banner-text">
 		<?php if (!isset($_SESSION['username'])) : ?>
 			<div>
-			<h2>WELCOME TO OUR FITNESS WEBPAGE</h2>
-				<p>Let's get started</p>
+			<h2 class ="animate__animated animate__fadeInDown">WELCOME TO OUR FITNESS WEBPAGE</h2>
+				<p class ="animate__animated animate__fadeInDown">Let's get started</p>
 			<div class="button">
 				<a href="login.php" class="btn">Login</a>
 				<a href="register.php" class="btn">Register</a>
