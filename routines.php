@@ -14,17 +14,32 @@ table, th, td {
 </style>
 </head>
 <body>
+    
+    <!-- Video Background Source -->
+    <video src="img/routines.mp4" class="vid-bg" autoplay loop muted></video>
+    
+     <!-- Filter Background -->
+    <div class="grayfilter"> 
+    
+    <!-- Navi Bar -->
+		<div class ="blackbar"></div>
+		<div class="main">
+			<div class="logo">
+				<a href="index.php">
+				<img src="img/logo2.png"></img>
+				</a>
+			</div>
+			<ul>
+				<li><a href="#">About Us</a></li>
+			</ul>
+	   </div>
+    </div>
+<a href="index.php?logout='1'" class="logout">Logout</a>
+    
 	<?php if ($_SESSION['fitness_goal'] === 'Hypertrophy') :?>
-<div class="container" id="accordion">
-	<div class="button1" >
-		<div class="card"> <!-- Panel (collapasable) -->
-    		<div class="card-header" id="headingOne" > <!-- Panel head -->
-       			 <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" ariacontrols="collapseOne">
-          			  3-Day Split
-        		</button>           
-    		</div> <!-- END Panel head -->
-   			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"> <!-- Collapsable section -->
-        		<div class="card-body "> <!-- Panel body -->     
+<div class="container">
+
+<div class="card-body "> 
 
     		<table class="content-table" >
 			<thead>
@@ -112,13 +127,10 @@ table, th, td {
 		</table>
 	</div>
 	</div>
-	</div>
-	</div>
-</div>
 	<?php endif ?>
 
 	<?php if ($_SESSION['fitness_goal'] === 'Strength') :?>
-	<table>
+	<table class="content-table">
 			<tr>
 				<th>Monday</th>
 				<th>Tuesday</th>
@@ -232,7 +244,7 @@ table, th, td {
 	<?php endif ?>
 
 	<?php if ($_SESSION['fitness_goal'] === 'Cardiovascular Health') :?>
-		<table>
+    <table  class="content-table">
 			<tr>
 				<th>Monday</th>
 				<th>Tuesday</th>
@@ -298,10 +310,10 @@ table, th, td {
 				<td>Rest</td>
 			</tr>
 			
-		</table>
+		</table>	
 	<?php endif ?>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
