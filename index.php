@@ -1,7 +1,8 @@
 <?php
 
-session_start(); 
+session_start();
 
+//Catches a logout GET request which clears the session stored username and redirects to the login page
 if (isset($_GET['logout'])) { 
 	session_destroy(); 
 	unset($_SESSION['username']); 
@@ -22,75 +23,70 @@ if (isset($_GET['logout'])) {
 <body>
 
 	<header class="fix">
+
 		<video src="img/indexbg.mp4" class="vid-bg" autoplay loop muted></video>
-	<div class="nav-area">
-		<!-- Cropped off code -->
-<div class ="blackbar">
-	</div>
-	<div class="main">
-			<div class="logo">
-				<a href="index.php">
-				<img src="img/logo2.png"></img>
-				</a>
-			</div>
-			<ul>
-				<li><a href="#">About Us</a></li>
-			</ul>
+
+		<div class="nav-area">
+
+		<div class ="blackbar"></div>
+
+		<div class="main">
+			<div class="logo"><a href="index.php"><img src="img/logo2.png"></img></a></div>
+			<ul><li><a href="#">About Us</a></li></ul>
 		</div>
 
-	<div class ="banner-text">
-		<?php if (!isset($_SESSION['username'])) : ?>
-			<div>
-			<h2 class ="animate__animated animate__fadeInDown">WELCOME TO OUR FITNESS WEBPAGE</h2>
-				<p class ="animate__animated animate__fadeInDown">Let's get started</p>
-			<div class="button">
-				<a href="login.php" class="btn">Login</a>
-				<a href="register.php" class="btn">Register</a>
-			
-			</div>
-		</div>
-		<?php endif ?>
-	</div>
-
-<div>  
-	<?php if (isset($_SESSION['username'])) : ?> 
-		<div class="animate_animated animate__fadeInDown banner-text">
-			<h3 class ="animate__animated animate__fadeIn">WELCOME,</h3>
-			<h4 class ="animate__animated animate__fadeInDown">The clock is ticking.</h4>
-			<h5 class ="animate__animated animate__fadeInDown">Are you becoming the person you want to be?</h5>
+		<div class ="banner-text">
+			<?php if (!isset($_SESSION['username'])) : ?>
+				<div>
+					<h2 class ="animate__animated animate__fadeInDown">WELCOME TO OUR FITNESS WEBPAGE</h2>
+					<p class ="animate__animated animate__fadeInDown">Let's get started</p>
+					<div class="button">
+						<a href="login.php" class="btn">Login</a>
+						<a href="register.php" class="btn">Register</a>
+					</div>
+				</div>
+			<?php endif ?>
 		</div>
 
-		<p class="Username"><strong class="animate__animated animate__fadeIn"><?php echo $_SESSION['username']; ?></strong></p> 
-		<a href="index.php?logout='1'" class="logout">Logout</a>
+		<div>  
+			<?php if (isset($_SESSION['username'])) : ?> 
+				<div class="animate_animated animate__fadeInDown banner-text">
+					<h3 class ="animate__animated animate__fadeIn">WELCOME,</h3>
+					<h4 class ="animate__animated animate__fadeInDown">The clock is ticking.</h4>
+					<h5 class ="animate__animated animate__fadeInDown">Are you becoming the person you want to be?</h5>
+				</div>
+
+				<p class="Username"><strong class="animate__animated animate__fadeIn"><?php echo $_SESSION['username']; ?></strong></p> 
+				<a href="index.php?logout='1'" class="logout">Logout</a>
 
 
-		<div class="buttonLOGIN">
+				<div class="buttonLOGIN">
 
-			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/food.jpeg" alt="food"/>
-			  <figcaption><ion-icon name="restaurant-sharp"></ion-icon>
-			    <h4>Know what you need</h4>
-			    <h2>Calorie Calculator</h2>
-			  </figcaption><a href="calories.php"></a>
-			</figure>
+					<figure class="animate__animated animate__fadeIn snip1321"><img src="img/food.jpeg" alt="food"/>
+		 				<figcaption><ion-icon name="restaurant-sharp"></ion-icon>
+			    			<h4>Know what you need</h4>
+			    			<h2>Calorie Calculator</h2>
+			  			</figcaption><a href="calories.php"></a>
+					</figure>
 
-			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
-			  <figcaption><ion-icon name="trending-up-sharp"></ion-icon>
-			    <h4>Track Your Weight Over Time</h4>
-			    <h2>Weight Log</h2>
-			  </figcaption><a href="weightlog.php"></a>
-			</figure>
+					<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog.jpg" alt="weight log"/>
+			  			<figcaption><ion-icon name="trending-up-sharp"></ion-icon>
+			    			<h4>Track Your Weight Over Time</h4>
+			    			<h2>Weight Log</h2>
+			  			</figcaption><a href="weightlog.php"></a>
+					</figure>
 
-			<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog2.jpg" alt="workoutroutine"/>
-			  <figcaption><ion-icon name="barbell-sharp"></ion-icon>
-			    <h4>Pick your Plan</h4>
-			    <h2>Workout Routines</h2>
-			  </figcaption><a href="routines.php"></a>
-			</figure>
+					<figure class="animate__animated animate__fadeIn snip1321"><img src="img/weightlog2.jpg" alt="workoutroutine"/>
+			  			<figcaption><ion-icon name="barbell-sharp"></ion-icon>
+			    			<h4>Pick your Plan</h4>
+			    			<h2>Workout Routines</h2>
+			  			</figcaption><a href="routines.php"></a>
+					</figure>
+				</div>
+			<?php endif ?>
+		</div> 
 
-		</div>
-	<?php endif ?>
-</div> 
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-</header>
+		<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+	</header>
 </body> 
 </html> 
