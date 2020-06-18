@@ -45,7 +45,7 @@ var ajax =  new XMLHttpRequest();
     		},
     		options: {
                 maintainAspectRatio : true,
-    			legend : {onClick: (e) => e.stopPropagation()},
+    			legend : {display: false},
         		scales: {
             		yAxes: [{
                 		ticks: {
