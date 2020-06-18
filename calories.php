@@ -46,7 +46,8 @@
 		</div>
 	</div>
     
-
+<a href="index.php?logout='1'" class="logout">Logout</a>
+    
 	<table class="content-table">
         <thead>
 
