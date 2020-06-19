@@ -178,7 +178,7 @@ ul li a:hover{
 .Username{
   color: white;
   position: fixed;
-  right: 6%;
+  left: 5%;
   top: 10%;
   font-size: 65px;
 }
@@ -222,7 +222,7 @@ ul li a:hover{
 
 .banner-text h3{
   position: fixed;
-  right: 5%;
+  left: 5%;
   top: 10%;
   font-weight: bold;
   color: #fff;
