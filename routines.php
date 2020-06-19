@@ -130,7 +130,8 @@ table, th, td {
 	<?php endif ?>
 
 	<?php if ($_SESSION['fitness_goal'] === 'Strength') :?>
-	<table class="content-table">
+	<table class="content-table2">
+        <thead>
 			<tr>
 				<th>Monday</th>
 				<th>Tuesday</th>
@@ -140,7 +141,8 @@ table, th, td {
 				<th>Saturday</th>
 				<th>Sunday</th>
 			</tr>
-
+            </thead>
+        <tbody>
 			<tr>
 				<td>Bench Press</td>
 				<td>Front Squat</td>
@@ -240,11 +242,13 @@ table, th, td {
 				<td>*Ab excercise of your choosing*</td>
 				<td>Rest</td>
 			</tr>
+            </tbody>
 	</table>
 	<?php endif ?>
 
 	<?php if ($_SESSION['fitness_goal'] === 'Cardiovascular Health') :?>
-    <table  class="content-table">
+    <table  class="content-table3">
+        <thead>
 			<tr>
 				<th>Monday</th>
 				<th>Tuesday</th>
@@ -254,7 +258,8 @@ table, th, td {
 				<th>Saturday</th>
 				<th>Sunday</th>
 			</tr>
-
+            </thead>
+        <tbody>
 			<tr>
 				<td>45-60 Minute Jog</td>
 				<td>60-90 Minute Bicycling</td>
@@ -309,7 +314,7 @@ table, th, td {
 				<td>Rest</td>
 				<td>Rest</td>
 			</tr>
-			
+			</tbody>
 		</table>	
 	<?php endif ?>
 
