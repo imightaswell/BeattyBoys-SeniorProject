@@ -1,4 +1,4 @@
-<!-- Linkes to the server.php file which creates a connection to the MySQL database -->
+
 <?php include('server.php') ?>
 <!DOCTYPE HTML>
 <html>
@@ -29,7 +29,7 @@
 				<li><a href="#">About Us</a></li>
 			</ul>
 		</div>
-	</div>
+	</div> 
 
 	<!-- Login Form -->
 		<div class="loginform">
