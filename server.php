@@ -9,7 +9,6 @@ $age= '';
 $height= '';
 $weight= '';
 $gender= '';
-$_SESSION['success'] = "";
 $activity= '';
 $fitness_goal='';
 $errors = array();
@@ -103,7 +102,6 @@ if (isset($_POST['signin'])) {
 
 			//Stores the username and fitness goal of the logged in user within the session and redirects them to the home page
 			$_SESSION['username'] = $username;
-			$_SESSION['success'] = "You have logged in";
 			$_SESSION['fitness_goal'] = $fitness_goal;
 			header('location: index.php');
 
