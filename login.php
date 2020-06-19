@@ -1,4 +1,3 @@
-
 <?php include('server.php') ?>
 <!DOCTYPE HTML>
 <html>
@@ -18,7 +17,8 @@
 		<div class="grayfilter">
 
 		<!-- Navi Bar -->
-		<div class ="blackbar"></div>
+		<div class ="blackbar">
+		</div>
 		<div class="main">
 			<div class="logo">
 				<a href="index.php">
@@ -36,9 +36,9 @@
 			<form action="login.php" method="post">
 
 				<img src="img/Logo4.png" class="avatar">
-
-				<!-- Directs to errors.php to check for any errors in the login process -->
-				<div class="errors"><?php include('errors.php'); ?></div>
+				<div class="errors">
+				<?php include('errors.php'); ?>
+				</div>
 
 				<label for="username"></label><br>
 				<input type="text" name="username" placeholder="Username"><br>
