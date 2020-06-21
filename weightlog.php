@@ -19,7 +19,7 @@ include('server.php');?>
 
 </head>
 <body>
-	<video src="img/routines.mp4" class="vid-bg" autoplay loop muted></video>
+	<video src="img/weightlogbg2.mp4" class="vid-bg" autoplay loop muted></video>
 	  <!-- Filter Background -->
 		    <div class="grayfilter"> 
 		    
@@ -36,18 +36,22 @@ include('server.php');?>
 					</ul>
 			   </div>
 		    </div>
-
+    
+<a href="index.php?logout='1'" class="logout">Logout</a>
+    
 	<div class="container">
 
 		<canvas id="myChart" width="100" height="100"></canvas>
-		
+        
 		<div class= "form-box">
 			<form id="weight" method="post" action="weightlog.php">
-				<label for="weight">Enter new weight:</label><br />
-				<input name="weight" type="number" /><br/>
+				<label for="weight"></label><br />
+				<input name="weight" type="number" placeholder="Enter new weight"/><br/>
 
 				<button type="submit" name="weightChange">Submit</button>
 			</form>
+            
+            <img src="img/Logo4.png" class="avatar">
 		</div>
 	</div>
 
