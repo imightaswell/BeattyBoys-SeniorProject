@@ -51,7 +51,7 @@ include('server.php');?>
 				<button type="submit" name="weightChange">Submit</button>
 			</form>
             
-            <img src="img/Logo4.png" class="avatar">
+            <img src="img/Logo3.png" class="avatar">
 		</div>
 	</div>
 
