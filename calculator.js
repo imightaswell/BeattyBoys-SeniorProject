@@ -31,29 +31,17 @@ function calories(age, weight, height, gender, activity){
 	var multiplier;
 
 
-	if (activity == "Sedentary"){
-		multiplier = 1.2;
-	}
+	if (activity == "Sedentary"){multiplier = 1.2;}
 
-	else if (activity == "Moderate"){
-		multiplier = 1.4;
-	}
+	else if (activity == "Moderate"){multiplier = 1.4;}
 
-	else if (activity == "Intense"){
-		multiplier = 1.7;
-	}
+	else if (activity == "Intense"){multiplier = 1.7;}
 
-	else {
-		multiplier = 1.95;
-	}
+	else {multiplier = 1.95;}
 
-	if (gender=="Male"){
-		base=((10*weight+6.25*height-5*age) + 5) * multiplier;
-	}
+	if (gender=="Male"){base=((10*weight+6.25*height-5*age) + 5) * multiplier;}
 
-	else {
-		base=((10*weight+6.25*height-5*age) - 161) * multiplier;
-	}
+	else {base=((10*weight+6.25*height-5*age) - 161) * multiplier;}
 
 	return base;
 }
@@ -70,46 +58,45 @@ var ajax =  new XMLHttpRequest();
 
 	ajax.onreadystatechange = function(){
 
-			var data = JSON.parse(this.responseText);
+		var data = JSON.parse(this.responseText);
 			
-			var age = data[0];
-			var weight = data[1];
-			var height = data[2];
-			var gender = data[3];
-			var activity = data[4];
+		var age = data[0];
+		var weight = data[1];
+		var height = data[2];
+		var gender = data[3];
+		var activity = data[4];
 			
-			weight = weight/2.205;
-			height = height*2.54;
+		weight = weight/2.205;
+		height = height*2.54;
 
 
-			var base = calories(age, weight, height, gender, activity);
-			var cutting = base - (base*.2);
-			var bulking = base + (base*.15);
+		var base = calories(age, weight, height, gender, activity);
+		var cutting = base - (base*.2);
+		var bulking = base + (base*.15);
 
-			var maintainArray;
-			var cuttingArray;
-			var bulkingArray;
+		var maintainArray;
+		var cuttingArray;
+		var bulkingArray;
 
-			baseArray = macros(base, weight*2.205);
-			cuttingArray = macros(cutting, weight*2.205);
-			bulkingArray = macros(bulking, weight*2.205);
+		baseArray = macros(base, weight*2.205);
+		cuttingArray = macros(cutting, weight*2.205);
+		bulkingArray = macros(bulking, weight*2.205);
 
-			document.getElementById('baseCals').innerHTML = base.toFixed(0);
-			document.getElementById('cuttingCals').innerHTML = cutting.toFixed(0);
-			document.getElementById('bulkingCals').innerHTML = bulking.toFixed(0);
+		document.getElementById('baseCals').innerHTML = base.toFixed(0);
+		document.getElementById('cuttingCals').innerHTML = cutting.toFixed(0);
+		document.getElementById('bulkingCals').innerHTML = bulking.toFixed(0);
 
-			document.getElementById('baseProtein').innerHTML = baseArray[0];
-			document.getElementById('baseFats').innerHTML = baseArray[1];
-			document.getElementById('baseCarbs').innerHTML = baseArray[2];
+		document.getElementById('baseProtein').innerHTML = baseArray[0];
+		document.getElementById('baseFats').innerHTML = baseArray[1];
+		document.getElementById('baseCarbs').innerHTML = baseArray[2];
 
-			document.getElementById('cuttingProtein').innerHTML = cuttingArray[0];
-			document.getElementById('cuttingFats').innerHTML = cuttingArray[1];
-			document.getElementById('cuttingCarbs').innerHTML = cuttingArray[2];
+		document.getElementById('cuttingProtein').innerHTML = cuttingArray[0];
+		document.getElementById('cuttingFats').innerHTML = cuttingArray[1];
+		document.getElementById('cuttingCarbs').innerHTML = cuttingArray[2];
 
-			document.getElementById('bulkingProtein').innerHTML = bulkingArray[0];
-			document.getElementById('bulkingFats').innerHTML = bulkingArray[1];
-			document.getElementById('bulkingCarbs').innerHTML = bulkingArray[2];
-
+		document.getElementById('bulkingProtein').innerHTML = bulkingArray[0];
+		document.getElementById('bulkingFats').innerHTML = bulkingArray[1];
+		document.getElementById('bulkingCarbs').innerHTML = bulkingArray[2];
 	}
 
 		

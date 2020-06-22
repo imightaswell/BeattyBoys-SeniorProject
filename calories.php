@@ -18,7 +18,7 @@
     
     <h1>Weight Change and How it Works</h1>
 	
-    <p class="paragraph">
+    	<p class="paragraph">
 			Weight change in the human body depends on caloric intake. A calorie is a unit of energy used in nutrition<br/> when determining how much energy and nutritional value is in food. The human body uses calories to function<br/> using them for things like providing the engery for our vital organs and providing energy to our muscles<br/> when we walk. Since the human body is constantly working and using calories there’s a base amount of calories<br/> the human body uses (or burns) to ensure our bodies are functioning properly.<br/><br/>
 
 			An analogy one can use when discussing caloric intake and the human body is gasoline and a car. The major<br/> difference is when humans fill up their metaphorical “gas tank” the energy consumed after is stored within the body.<br/> These stored calories can then be used as a source of energy for the body in the future.<br/><br/>
@@ -32,7 +32,7 @@
 			-  Emmanuel Valenzuela <br> Proud CEO of BeattyBoyz Fitness <br/>
 		</p>
         
-    <!-- Navi Bar -->
+    	<!-- Navi Bar -->
 		<div class ="blackbar"></div>
 		<div class="main">
 			<div class="logo">
@@ -46,63 +46,62 @@
 		</div>
 	</div>
     
-<a href="index.php?logout='1'" class="logout">Logout</a>
+	<a href="index.php?logout='1'" class="logout">Logout</a>
     
 	<table class="content-table">
         <thead>
-
-		<tr>
-			<th>Maintenance Calories</th>
-			<th>Cutting Calories</th>
-			<th>Bulking Calories</th>
-		</tr>
-            </thead>
+			<tr>
+				<th>Maintenance Calories</th>
+				<th>Cutting Calories</th>
+				<th>Bulking Calories</th>
+			</tr>
+        </thead>
         <tbody>
 
-		<tr>
-			<td><p id="baseCals"></p></td>
-			<td><p id="cuttingCals"></p></td>
-			<td><p id="bulkingCals"></p></td>
-		</tr>
+			<tr>
+				<td><p id="baseCals"></p></td>
+				<td><p id="cuttingCals"></p></td>
+				<td><p id="bulkingCals"></p></td>
+			</tr>
 
 		
-		<tr>
-			<td><p>Protein:</p></td>
-			<td><p>Protein:</p></td>
-			<td><p>Protein:</p></td>
-		</tr>
+			<tr>
+				<td><p>Protein:</p></td>
+				<td><p>Protein:</p></td>
+				<td><p>Protein:</p></td>
+			</tr>
 		
-		<tr>
-			<td><p id="baseProtein"></p></td>
-			<td><p id="cuttingProtein"></p></td>
-			<td><p id="bulkingProtein"></p></td>
-		</tr>
+			<tr>
+				<td><p id="baseProtein"></p></td>
+				<td><p id="cuttingProtein"></p></td>
+				<td><p id="bulkingProtein"></p></td>
+			</tr>
 
-		<tr>
-			<td><p>Carbs:</p></td>
-			<td><p>Carbs:</p></td>
-			<td><p>Carbs:</p></td>
-		</tr>
+			<tr>
+				<td><p>Carbs:</p></td>
+				<td><p>Carbs:</p></td>
+				<td><p>Carbs:</p></td>
+			</tr>
 
-		<tr>
-			<td><p id="baseCarbs"></p></td>
-			<td><p id="cuttingCarbs"></p></td>
-			<td><p id="bulkingCarbs"></p></td>
-		</tr>
+			<tr>
+				<td><p id="baseCarbs"></p></td>
+				<td><p id="cuttingCarbs"></p></td>
+				<td><p id="bulkingCarbs"></p></td>
+			</tr>
 
-		<tr>
-			<td><p>Fats:</p></td>
-			<td><p>Fats:</p></td>
-			<td><p>Fats:</p></td>
-		</tr>
+			<tr>
+				<td><p>Fats:</p></td>
+				<td><p>Fats:</p></td>
+				<td><p>Fats:</p></td>
+			</tr>
 
-		<tr>
-			<td><p id="baseFats"></p></td>
-			<td><p id="cuttingFats"></p></td>
-			<td><p id="bulkingFats"></p></td>
-		</tr>
-	</tbody>
+			<tr>
+				<td><p id="baseFats"></p></td>
+				<td><p id="cuttingFats"></p></td>
+				<td><p id="bulkingFats"></p></td>
+			</tr>
+		</tbody>
 	</table>
-</header>
+	</header>
 </body>
 </html>
