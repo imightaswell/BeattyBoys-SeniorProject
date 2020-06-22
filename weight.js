@@ -36,8 +36,8 @@ var ajax =  new XMLHttpRequest();
         			datasets: [{
             			label: 'Weight Entries',
             			data: weight_array,
-            			borderColor: ['rgb(0,0,0)'],
-            			borderWidth: 1,
+            			borderColor: ['rgb(126,0,0)'],
+            			borderWidth: 4,
             			lineTension: 0,
             			fill : false
         		}]
@@ -47,27 +47,35 @@ var ajax =  new XMLHttpRequest();
                 maintainAspectRatio : false,
         		scales: {
             		yAxes: [{
+                        gridLines: {
+                            color: 'rgb(192,192,192)'
+                        },
                 		ticks: {
                     		beginAtZero: true,
                             fontSize: 15,
+                            fontColor: 'rgb(192,192,192)',
                     			callback: function(value, index, values) {
                         			return value + "lbs";
-                    }
-                }
-            }],
+                                }
+                        }
+                    }],
 
-            xAxes: [{
-            	ticks : {
-                    fontSize: 15,
-            		callback: function(value, index, values){
-            			return 'Entry ' + value;
-            		}
-            	}
-            }]
-        }
+                    xAxes: [{
+                        gridLines: {
+                            color: 'rgb(192,192,192)'
+                        },
+            	       ticks : {
+                            fontSize: 15,
+                            fontColor: 'rgb(192,192,192)',
+            		          callback: function(value, index, values){
+            			         return 'Entry ' + value;
+            		          }
+            	        }
+                    }]
+                }
+            }
+        });
     }
-});
-}
 
 
 		
