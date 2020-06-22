@@ -187,26 +187,26 @@ h1{
 .loginform label[for="weight"]{
     position:fixed;
     left: 52%;
-    top: 13.4%;
+    top: 14.3%;
     
 }
 
 .loginform select[name="gender"]{
     position: fixed;
     left: 52%;
-    top: 33.9%;
+    top: 31.7%;
 }
 
 .loginform select[name="activity"]{
     position:fixed;
     left: 52%;
-    top: 50.4%;
+    top: 47.3%;
 }
 
 .loginform select[name="fitness_goal"]{
     position:fixed;
     left: 52%;
-    bottom: 29.2%;
+    bottom: 33.9%;
 }
 
 /* Select Dropdown CSS */
