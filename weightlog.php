@@ -41,7 +41,7 @@ include('server.php');?>
     
 	<div class="container">
 
-		<canvas id="myChart" width="100" height="100"></canvas>
+		<canvas id="myChart" width="100" height="100" style="background-color: #141418"></canvas>
         
 		<div class= "form-box">
 			<form id="weight" method="post" action="weightlog.php">
