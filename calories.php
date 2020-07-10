@@ -59,9 +59,9 @@
         <tbody>
 
 			<tr>
-				<td><p id="baseCals"></p></td>
-				<td><p id="cuttingCals"></p></td>
-				<td><p id="bulkingCals"></p></td>
+				<td><p id="baseCals">g</p></td>
+				<td><p id="cuttingCals">g</p></td>
+				<td><p id="bulkingCals">g</p></td>
 			</tr>
 
 		
@@ -72,9 +72,9 @@
 			</tr>
 		
 			<tr>
-				<td><p id="baseProtein"></p></td>
-				<td><p id="cuttingProtein"></p></td>
-				<td><p id="bulkingProtein"></p></td>
+				<td><p id="baseProtein">g</p></td>
+				<td><p id="cuttingProtein">g</p></td>
+				<td><p id="bulkingProtein">g</p></td>
 			</tr>
 
 			<tr>
@@ -84,9 +84,9 @@
 			</tr>
 
 			<tr>
-				<td><p id="baseCarbs"></p></td>
-				<td><p id="cuttingCarbs"></p></td>
-				<td><p id="bulkingCarbs"></p></td>
+				<td><p id="baseCarbs"></p>g</td>
+				<td><p id="cuttingCarbs">g</p></td>
+				<td><p id="bulkingCarbs">g</p></td>
 			</tr>
 
 			<tr>
@@ -96,9 +96,9 @@
 			</tr>
 
 			<tr>
-				<td><p id="baseFats"></p></td>
-				<td><p id="cuttingFats"></p></td>
-				<td><p id="bulkingFats"></p></td>
+				<td><p id="baseFats">g</p></td>
+				<td><p id="cuttingFats">g</p></td>
+				<td><p id="bulkingFats">g</p></td>
 			</tr>
 		</tbody>
 	</table>
