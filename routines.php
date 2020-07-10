@@ -16,7 +16,7 @@ table, th, td {
 <body>
     
     <!-- Video Background Source -->
-    <video src="img/routinesnew.mp4" class="vid-bg" autoplay loop muted></video>
+    <video src="img/routinesBG.mp4" class="vid-bg" autoplay loop muted></video>
     
      <!-- Filter Background -->
     <div class="grayfilter"> 
@@ -30,7 +30,7 @@ table, th, td {
 				</a>
 			</div>
 			<ul>
-				<li><a href="#">About Us</a></li>
+				<li><a href="aboutUs.php">About Us</a></li>
 			</ul>
 	   </div>
     </div>
