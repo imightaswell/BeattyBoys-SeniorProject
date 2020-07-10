@@ -7,17 +7,17 @@ function macros(c, w){
 
 	/** Calculates the protein (1g per pound of body weight) then takes away the calories from the protein from the total **/
 	var protein = w;
-	array.push(protein);
+	array.push(protein + "g");
 	var leftOver = c - (protein*4);
 
 	/** Calculates the fats (25% of caloric intake) then takes away the calories from the fats from the remaining calories **/
 	var fats = ((c*.25)/9).toFixed(0);
-	array.push(fats);
+	array.push(fats + "g");
 	leftOver = leftOver - (fats*9);
 
 	/** Calculates the carbs (remaining calories) then takes away the calories from the fats from the remaining calories **/
 	var carbs = (leftOver/4).toFixed(0);
-	array.push(carbs);
+	array.push(carbs + "g");
 
 	return array;
 	
